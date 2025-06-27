@@ -10,6 +10,7 @@ public class BackgroundMover : MonoBehaviour
     public GameObject bgObj2;
     private GameManager gameManager; 
 
+    private float distance = 0f;
     private float bgWidth;
     private bool isPaused = false;
 
@@ -21,7 +22,6 @@ public class BackgroundMover : MonoBehaviour
         }
         SetupInitialPositions();
          gameManager = FindObjectOfType<GameManager>();
-         transform.position = new Vector3(0, 0, 0);
     }
 
     private void SetupInitialPositions()
@@ -47,12 +47,13 @@ public class BackgroundMover : MonoBehaviour
     private void MoveBackgrounds()
     {
         float playerSpeed = 0f;
+
         if(gameManager!=null && gameManager.player !=null)
         {
             playerSpeed = gameManager.player.RightVelocity;
         } 
-        float currentMoveSpeed = playerSpeed;
         
+        distance += moveSpeed*Time.deltaTime; 
         if (bgObj1 != null)
         {
             bgObj1.transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
@@ -62,30 +63,28 @@ public class BackgroundMover : MonoBehaviour
         {
             bgObj2.transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
         }
- transform.Translate(Vector3.right * currentMoveSpeed * Time.deltaTime) ;
+transform.Translate(Vector3.right* playerSpeed * Time.deltaTime);
 
-
-
-        if (bgObj1.transform.position.x <= -bgWidth)
-        {
-            bgObj1.transform.position = new Vector3(bgObj2.transform.position.x + bgWidth, 0, 0);
-        }
-
-        if (bgObj2.transform.position.x <= -bgWidth)
+        if (distance >= 2*bgWidth)
         {
             bgObj2.transform.position = new Vector3(bgObj1.transform.position.x + bgWidth, 0, 0);
+            distance = 0f;
+        }
+else if (distance >= bgWidth)
+        {
+            bgObj1.transform.position = new Vector3(bgObj2.transform.position.x + bgWidth, 0, 0);
         }
 
 
     }
 
-  
+    // �����ƶ��ٶ�
     public void SetMoveSpeed(float speed)
     {
         moveSpeed = speed;
     }
 
-
+    // ��ͣ/�ָ��ƶ�
     public void SetPaused(bool paused)
     {
         isPaused = paused;

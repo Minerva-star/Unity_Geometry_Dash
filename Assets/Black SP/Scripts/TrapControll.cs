@@ -3,7 +3,9 @@ using System.Collections;
 
 public class TrapControll : MonoBehaviour {
 
+	//控制是否在游戏开始后自动旋转 
 	public bool rotationInStart = false;
+	//旋转速度（正负决定方向）
 	public float speed_rotation = -5;
 	
 	void Start () {
