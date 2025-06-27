@@ -8,16 +8,13 @@ public class PlayerBehavior : MonoBehaviour
     private SpriteRenderer _renderer;
     private Collider2D _collider;
     private TrailRenderer _trail;
-
+    
 
     public float jumpForce = 5f;
-    public float moveSpeed = 5f;
     public float fallSpeed = 3f;
 
     public float RightVelocity = 20f;
-    public float horizontalSpeed = 0.05f;
-
-    public float baseRotation = 30f;
+    public float baseRotation = 0f;
     public float rotationSpeed = 360;
 // 测试提交怎么用  喵
 
@@ -116,17 +113,18 @@ public class PlayerBehavior : MonoBehaviour
         float targetRotation = baseRotation;
         if (_rb.velocity.y > 0.1f)
         {
-            targetRotation = 90f;
+            targetRotation = 30f;
         }
         else if (_rb.velocity.y < -0.1f)
         {
-            targetRotation = 0f;
+            targetRotation = -30f;
         }
 
-        float currentZ = transform.rotation.eulerAngles.z;
-        float newZ = Mathf.MoveTowards(currentZ, targetRotation, rotationSpeed * Time.deltaTime);
-        transform.rotation = Quaternion.Euler(0, 0, newZ);
-
+        // float currentZ = transform.rotation.eulerAngles.z;
+        // float newZ = Mathf.MoveTowards(currentZ, targetRotation, rotationSpeed * Time.deltaTime);
+        // transform.rotation = Quaternion.Euler(0, 0, newZ);
+        
+        transform.rotation = Quaternion.Euler(0, 0, targetRotation);
     }
 
 
