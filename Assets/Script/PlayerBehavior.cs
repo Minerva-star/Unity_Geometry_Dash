@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerBehavior : MonoBehaviour
 {
     private Rigidbody2D _rb;
-    private SpriteRenderer _renderer;
+    public SpriteRenderer _renderer;
     private Collider2D _collider;
-    private TrailRenderer _trail;
+    // private TrailRenderer _trail;
     
 
     public float jumpForce = 5f;
@@ -16,7 +16,8 @@ public class PlayerBehavior : MonoBehaviour
     public float RightVelocity = 20f;
     public float baseRotation = 0f;
     public float rotationSpeed = 360;
-// 测试提交怎么用  喵
+    public TrailController trailController;
+    
 
     // 屏幕位置控制
     private Camera mainCamera;
@@ -44,9 +45,8 @@ public class PlayerBehavior : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         mainCamera = Camera.main;
-        _renderer = GetComponent<SpriteRenderer>();
         _collider = GetComponent<Collider2D>();
-        _trail = GetComponent<TrailRenderer>();
+        // _trail = GetComponent<TrailRenderer>();
 
         _rb.gravityScale = 0f;
 
@@ -186,7 +186,7 @@ public class PlayerBehavior : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Obstacle"))
+        if (other.CompareTag("Obstacle") && !isGameOver && !isGamePaused)
         {
 
             isGameOver = true;
@@ -233,10 +233,11 @@ public class PlayerBehavior : MonoBehaviour
         _collider.enabled = true;
         _rb.isKinematic = false;
         transform.position = oldPosition;
-        _trail.Clear();
+        // _trail.Clear();
 
         transform.rotation = Quaternion.Euler(0, 0, baseRotation);
-
+        if (trailController != null)
+            trailController.ClearTrail();
     }
 
 

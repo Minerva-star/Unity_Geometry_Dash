@@ -57,6 +57,21 @@ public class UIManager : MonoBehaviour
             gameOverQuitButton.onClick.AddListener(OnQuitButtonClicked);
     }
 
+    
+    // 在 UIManager.cs 里添加控制暂停键显示的方法
+    public void SetPauseButtonVisible(bool visible)
+    {
+        if (pauseButton != null)
+         pauseButton.gameObject.SetActive(visible);
+        
+    }
+    
+
+    public void SetCurrentProgressVisible(bool visible)
+    {
+        progressText.gameObject.SetActive(visible);
+    }
+
     public void ShowMainGameUI()
     {
         if (mainGameUI != null) mainGameUI.SetActive(true);
@@ -69,6 +84,7 @@ public class UIManager : MonoBehaviour
         if (mainGameUI != null) mainGameUI.SetActive(false);
         if (pausePanel != null) pausePanel.SetActive(true);
         if (gameOverPanel != null) gameOverPanel.SetActive(false);
+        SetPauseButtonVisible(false);
     }
 
     public void ShowGameOverUI(float finalProgress)
@@ -125,11 +141,11 @@ public class UIManager : MonoBehaviour
 
     private void OnQuitButtonClicked()
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-            Application.Quit();
-#endif
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                    Application.Quit();
+        #endif
     }
 
 

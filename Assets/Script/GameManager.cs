@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     public PlayerBehavior player;
     public UIManager uiManager;
-
+    public BackgroundMover background;
 
     public float totalMapLength = 242f;
     private float currentProgress = 0f;
@@ -60,11 +60,15 @@ public class GameManager : MonoBehaviour
     {
         currentState = GameState.Playing;
         currentProgress = 0f;
-
+        background.SetPaused(false);
         player.OnPlayerDeath += OnPlayerDeath;
         gameOverUI.SetActive(false);
 
-
+        if (uiManager != null)
+        {  uiManager.SetPauseButtonVisible(true);
+         uiManager.SetCurrentProgressVisible(true);    
+        }
+        
         GameObject[] loseParticles = GameObject.FindGameObjectsWithTag("LoseParticle");
         foreach (GameObject particle in loseParticles)
         {
@@ -106,6 +110,8 @@ public class GameManager : MonoBehaviour
     {
         currentState = GameState.GameOver;
         gameOverUI.SetActive(true);
+        if (background != null)
+            background.SetPaused(true); // 暂停背景
 
         //最高记录
         if (currentProgress > highScore)
@@ -113,8 +119,9 @@ public class GameManager : MonoBehaviour
             highScore = currentProgress;
             SaveHighScore();
         }
-
+        SetMusicPause(true);
         uiManager.ShowGameOverUI(currentProgress, highScore);
+        uiManager.SetCurrentProgressVisible(false);    
     }
 
     public float GetHighScore()
@@ -148,12 +155,13 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
 
         player.SetGamePaused(true);
-
+        background.SetPaused(true);
+        SetMusicPause(true);
+        
         if (pausePanel != null)
         {
             pausePanel.SetActive(true);
         }
-
 
     }
 
@@ -171,7 +179,8 @@ public class GameManager : MonoBehaviour
         {
             pausePanel.SetActive(false);
         }
-
+        if (uiManager != null)
+            uiManager.SetPauseButtonVisible(false);
     }
 
 
@@ -180,12 +189,37 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         player.Reset();
+        if (background != null)
+            background.ResetBackground(); 
+        // 重新播放音乐
+        var cam = Camera.main;
+        if (cam != null)
+        {
+            var audio = cam.GetComponent<AudioSource>();
+            if (audio != null)
+            {
+                audio.Stop();
+                audio.Play();
+            }
+        }
 
         InitializeGame();
 
     }
 
-
+    public void SetMusicPause( bool paused)
+    {
+        // 重新播放音乐
+        var cam = Camera.main;
+        if (cam != null)
+        {
+            var audio = cam.GetComponent<AudioSource>();
+            if (paused)
+                audio.Pause();
+            else
+                audio.UnPause();
+        }
+    }
 
 
 

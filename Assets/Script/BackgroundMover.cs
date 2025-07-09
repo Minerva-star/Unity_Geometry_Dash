@@ -28,14 +28,17 @@ public class BackgroundMover : MonoBehaviour
     {
         if (bgObj1 != null && bgObj2 != null)
         {
-            bgObj1.transform.position = Vector3.zero;
-            bgObj2.transform.position = new Vector3(bgWidth, 0, 0);
+            // bgObj1.transform.localPosition = new Vector3(0, 0, 0);
+            bgObj2.transform.localPosition = new Vector3(bgWidth + bgObj1.transform.localPosition.x, 0, 0);
         }
-
-
     }
-
-
+    public void ResetBackground()
+    {
+        distance = 0f;
+        if (bgObj1 != null) bgObj1.transform.localPosition = new Vector3(0, 0, 0);
+        if (bgObj2 != null) bgObj2.transform.localPosition = new Vector3(bgWidth, 0, 0);
+        transform.position = new Vector3(0, 0, 5); // 父物体z为5
+    }
     private void Update()
     {
         if (!isPaused)
@@ -63,16 +66,16 @@ public class BackgroundMover : MonoBehaviour
         {
             bgObj2.transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
         }
-transform.Translate(Vector3.right* playerSpeed * Time.deltaTime);
+        transform.Translate(Vector3.right* playerSpeed * Time.deltaTime);
 
         if (distance >= 2*bgWidth)
         {
-            bgObj2.transform.position = new Vector3(bgObj1.transform.position.x + bgWidth, 0, 0);
+            bgObj2.transform.position = new Vector3(bgObj1.transform.position.x + bgWidth, 0, transform.position.z);
             distance = 0f;
         }
 else if (distance >= bgWidth)
         {
-            bgObj1.transform.position = new Vector3(bgObj2.transform.position.x + bgWidth, 0, 0);
+            bgObj1.transform.position = new Vector3(bgObj2.transform.position.x + bgWidth, 0, transform.position.z);
         }
 
 
