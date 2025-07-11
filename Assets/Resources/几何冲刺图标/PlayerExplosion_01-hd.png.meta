@@ -1,0 +1,1610 @@
+fileFormatVersion: 2
+guid: 110bbe941091341449d12957bdc6374c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_0
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1064
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc4b49b1c05109468f0eefa487e1eca
+      internalID: -993352271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_1
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 979
+        width: 73
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9733183471db559439c3477083440aa6
+      internalID: 542095485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_2
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1009
+        width: 89
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79023acea0a77c8489da35dec98df2c6
+      internalID: -1462086099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_3
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 786
+        width: 244
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d373d7550d02384985a5c9a7fa1543c
+      internalID: -262505649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_4
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 975
+        width: 118
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d068eb150dabe9147acd36c069b50386
+      internalID: -173347828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 778
+        width: 304
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea1b8e00f26adf4abaa560f94f42cbd
+      internalID: -1252021162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_6
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1012
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45178584d12afc5408dcce97cb22418b
+      internalID: 153806589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_7
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 960
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4602c269f91b1c046b0d3b3348972b2d
+      internalID: -1448987423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_8
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 950
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190261292521e6b4cbfa7cacd91dd1f1
+      internalID: -507290258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_9
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 785
+        width: 153
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bda482e3ea760d49b94b1370835b1eb
+      internalID: 76700662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_10
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 892
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224f92a315d09e6458e06f3db0cddf33
+      internalID: 1701715433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_11
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 854
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86c5e7445cc89e4a930cc601ead36af
+      internalID: -939893882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_12
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 859
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360000ac18490224c89e0f69d50fc476
+      internalID: 42220423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_13
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 860
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078746265084fc247b9db98a7ff96477
+      internalID: -1900355911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 807
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e71caa1c48a52148a5c1094682bb012
+      internalID: 1927221656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_15
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 781
+        width: 85
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57946199aa47f4b4991817a90b6b6311
+      internalID: 282900478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 654
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e7d208cc2ccaf4094cd10d87a946f4
+      internalID: -71776495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_17
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 678
+        width: 100
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dfb77c31a63234e85c1c0c0d27e77e
+      internalID: -691463145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_18
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 482
+        width: 260
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e245b98e64b7f43a1a9e3009550066
+      internalID: 1259900465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_19
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 750
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdad036dd16e26c448ab1757971e4225
+      internalID: 1337447644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_20
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 741
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c340dab2aab2d49b58c67cb2463298
+      internalID: 1670926594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_21
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 747
+        width: 35
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64720b644bed1e42b0dfbcab89a147d
+      internalID: -1303319938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_22
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 755
+        width: 44
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450b70ae9b558ab4a8020e0eb2fc4085
+      internalID: -1838857956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_23
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 742
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c99f121aad87944921d0e47320b3bc
+      internalID: -65363403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_24
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 542
+        width: 232
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4de710875cb0645850712ef7220530
+      internalID: 537805777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_25
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 718
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4352b35abbd87246bc9d79528b3ad5e
+      internalID: 1736285920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_26
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 693
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fb54caa0e13a149aa23410bc4e75b0
+      internalID: 238111782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_27
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 655
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597cddc12d978f046bfe452048fe80b3
+      internalID: 670183833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_28
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 663
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d660e32f4f9daf542974b33cf34e8bf6
+      internalID: 1032887280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_29
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 647
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13f0f7de99239642b2e7dec0a95ccf9
+      internalID: 756349523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_30
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 661
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03606af2656fe924b87b57208a25e9a3
+      internalID: 490472713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_31
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 480
+        width: 232
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c45deea2b3dfe9499afd1f58b4dc7cb
+      internalID: -708502231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_32
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 614
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0334508dfdf1648a559ebf1bd484fd
+      internalID: 2044523363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_33
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 619
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760edb3bdb32f5a48ba300a13a8a2421
+      internalID: -988911395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_34
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 600
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc0b3fc616c00f40af5b4623a438c97
+      internalID: -1306704598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_35
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 586
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e58e14878eb98e439a0666372eed1a9
+      internalID: 2032450128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_36
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 554
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be00a472702f734caa0edbaf5696e39
+      internalID: 119553301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_37
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 576
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab36d99845fcf8d4ba787a60030ccfc5
+      internalID: 1574366257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_38
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 566
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3f897dc53a0c84c9e6fe7cbced1bf8
+      internalID: 1910114597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_39
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 550
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8855b70f71a260e47af1e69b206d5568
+      internalID: 1245941190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_40
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 546
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128a9022fb094ce429abef6575e66555
+      internalID: 866664911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_41
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 535
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4680f53d275d34f4eb2159fc1fb677e3
+      internalID: -359784799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_42
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 512
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a120bb9c8d2ff64e8af5117ddda3279
+      internalID: 2010970394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_43
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 524
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d566d0f248942e4fa3b171ebb62a3b6
+      internalID: 1101443932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_44
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 353
+        width: 208
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322662e04835e7c40967124897e28bae
+      internalID: 1310640242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_45
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 503
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e78427189f2b04d862251df4717636
+      internalID: -1914825263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_46
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 494
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcf4a9c3308c7e4187d872a4dbbdcc5
+      internalID: 1941679106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_47
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 496
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1628853532b525241a4fc45c9c81dd0b
+      internalID: 1745577250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_48
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 494
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6f8f08375364f4aaf162ec4dd4a74a
+      internalID: 264671731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_49
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 186
+        width: 290
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec8567b86f37e14b83a6ce4ae3acf77
+      internalID: -547182355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_50
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 431
+        width: 61
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce4db7c0dcf8ef48b24e773358a6f20
+      internalID: -1207209445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_51
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 415
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01749bccfcbde224cb76cb1ee53cefb3
+      internalID: 121463101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_52
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 422
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fbdbe2faafcd34faeb2fd27652df4e
+      internalID: -1820200574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_53
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 215
+        width: 256
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c5a840cd6aa5049862fe8f096cb351
+      internalID: 1519409482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_54
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 386
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3aca45348b81140bd8fddbcacc4074
+      internalID: -938274348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_55
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 375
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029d0be1c16f698408e64804339cfb5b
+      internalID: -1432489297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_56
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 357
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ed7c4e635e2194ab24c8c48919de67
+      internalID: 1255910175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_57
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 237
+        width: 49
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbcfe428291a5744a22a568007a8907
+      internalID: 2141590040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_58
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 306
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a725808fae604f44a386278bcf1340d
+      internalID: -803949544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_59
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 272
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a331db192fbae845bd880b55a05df5b
+      internalID: -891204510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_60
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 261
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de74849a75f9d746ac2df93b13856fc
+      internalID: -1422775528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_61
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 268
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ef7eba94d0fe744842ec3913843540
+      internalID: 365561979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_62
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 188
+        width: 86
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3678418ea5f50264ea3f66c175918642
+      internalID: 22558972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_63
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 216
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f0be740a77bbe4a890be85827e63a4
+      internalID: -493414277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_64
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 192
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae889fdcd99115247aada4b9f65e618a
+      internalID: -1625959893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_65
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 189
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41a468f754f0dd4fbfbd288bd9185c4
+      internalID: 1277962545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerExplosion_01-hd_66
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 32
+        width: 168
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8fe702c5e190e468800823362d4bdb
+      internalID: 814578670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PlayerExplosion_01-hd_0: -993352271
+      PlayerExplosion_01-hd_1: 542095485
+      PlayerExplosion_01-hd_10: 1701715433
+      PlayerExplosion_01-hd_11: -939893882
+      PlayerExplosion_01-hd_12: 42220423
+      PlayerExplosion_01-hd_13: -1900355911
+      PlayerExplosion_01-hd_14: 1927221656
+      PlayerExplosion_01-hd_15: 282900478
+      PlayerExplosion_01-hd_16: -71776495
+      PlayerExplosion_01-hd_17: -691463145
+      PlayerExplosion_01-hd_18: 1259900465
+      PlayerExplosion_01-hd_19: 1337447644
+      PlayerExplosion_01-hd_2: -1462086099
+      PlayerExplosion_01-hd_20: 1670926594
+      PlayerExplosion_01-hd_21: -1303319938
+      PlayerExplosion_01-hd_22: -1838857956
+      PlayerExplosion_01-hd_23: -65363403
+      PlayerExplosion_01-hd_24: 537805777
+      PlayerExplosion_01-hd_25: 1736285920
+      PlayerExplosion_01-hd_26: 238111782
+      PlayerExplosion_01-hd_27: 670183833
+      PlayerExplosion_01-hd_28: 1032887280
+      PlayerExplosion_01-hd_29: 756349523
+      PlayerExplosion_01-hd_3: -262505649
+      PlayerExplosion_01-hd_30: 490472713
+      PlayerExplosion_01-hd_31: -708502231
+      PlayerExplosion_01-hd_32: 2044523363
+      PlayerExplosion_01-hd_33: -988911395
+      PlayerExplosion_01-hd_34: -1306704598
+      PlayerExplosion_01-hd_35: 2032450128
+      PlayerExplosion_01-hd_36: 119553301
+      PlayerExplosion_01-hd_37: 1574366257
+      PlayerExplosion_01-hd_38: 1910114597
+      PlayerExplosion_01-hd_39: 1245941190
+      PlayerExplosion_01-hd_4: -173347828
+      PlayerExplosion_01-hd_40: 866664911
+      PlayerExplosion_01-hd_41: -359784799
+      PlayerExplosion_01-hd_42: 2010970394
+      PlayerExplosion_01-hd_43: 1101443932
+      PlayerExplosion_01-hd_44: 1310640242
+      PlayerExplosion_01-hd_45: -1914825263
+      PlayerExplosion_01-hd_46: 1941679106
+      PlayerExplosion_01-hd_47: 1745577250
+      PlayerExplosion_01-hd_48: 264671731
+      PlayerExplosion_01-hd_49: -547182355
+      PlayerExplosion_01-hd_5: -1252021162
+      PlayerExplosion_01-hd_50: -1207209445
+      PlayerExplosion_01-hd_51: 121463101
+      PlayerExplosion_01-hd_52: -1820200574
+      PlayerExplosion_01-hd_53: 1519409482
+      PlayerExplosion_01-hd_54: -938274348
+      PlayerExplosion_01-hd_55: -1432489297
+      PlayerExplosion_01-hd_56: 1255910175
+      PlayerExplosion_01-hd_57: 2141590040
+      PlayerExplosion_01-hd_58: -803949544
+      PlayerExplosion_01-hd_59: -891204510
+      PlayerExplosion_01-hd_6: 153806589
+      PlayerExplosion_01-hd_60: -1422775528
+      PlayerExplosion_01-hd_61: 365561979
+      PlayerExplosion_01-hd_62: 22558972
+      PlayerExplosion_01-hd_63: -493414277
+      PlayerExplosion_01-hd_64: -1625959893
+      PlayerExplosion_01-hd_65: 1277962545
+      PlayerExplosion_01-hd_66: 814578670
+      PlayerExplosion_01-hd_67: 1615824205
+      PlayerExplosion_01-hd_7: -1448987423
+      PlayerExplosion_01-hd_8: -507290258
+      PlayerExplosion_01-hd_9: 76700662
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

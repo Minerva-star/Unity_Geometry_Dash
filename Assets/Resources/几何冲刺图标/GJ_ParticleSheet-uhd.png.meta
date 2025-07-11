@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: e20fc293fdb32ea4eae915c1168bbfc6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_1
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 331
+        width: 94
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25fd4455aa97cc4ebda81ca4df30219
+      internalID: -1646682866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_3
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 330
+        width: 121
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d1f7fbc6956224a8a4f26d007970a9
+      internalID: -683693833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_4
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 326
+        width: 128
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1443209f031406543af8684c1af6f96e
+      internalID: -1212849645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_5
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 329
+        width: 123
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed96b024c612504dba068ba7eef984a
+      internalID: -108068975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_7
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 329
+        width: 123
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f8e82219805444abed28620c8b290b
+      internalID: -2055820280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_9
+      rect:
+        serializedVersion: 2
+        x: 2580
+        y: 342
+        width: 126
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2f46ba3ed423e43aaca718c34425e1
+      internalID: 1378406947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_10
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 332
+        width: 127
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c1c26f73e887a42986098633976bca
+      internalID: -1602128388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_11
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 327
+        width: 123
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c0a11294a1af6439c411e9968cd864
+      internalID: -1641669446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_13
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 202
+        width: 118
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6959a75cfb2a6840a8d4fc1387d837b
+      internalID: 1278369492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_14
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 255
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b24ea1e23477a42b414d09920a12a4
+      internalID: 2107865982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_15
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 209
+        width: 105
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4743010f36d377a4eb30b54ecf891320
+      internalID: 1072843741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_16
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 209
+        width: 122
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ca3891a650eba4eb7000b9fdcf52fd
+      internalID: -1822467347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_20
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 139
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb9571fec0cebda449c8a14e79831998
+      internalID: -291778836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_24
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 130
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303ef123a2a2d2b438e322315941f7b5
+      internalID: -1573932361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_26
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 0
+        width: 85
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086cf9203a7d96c438062c93cce57db0
+      internalID: 902829624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_27
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a19f4c5f20eb764c9fa799cf3000856
+      internalID: -1068638558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_28
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1
+        width: 56
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838fbb968ef0326409109b2201e160fb
+      internalID: -1438447760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_29
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 2
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e51f8df5c04a6f489f15279f48c48d3
+      internalID: 173616339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_30
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7772c31c472704b8662fb09bb70af5
+      internalID: 813890939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_31
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 1
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34196895c653864c9c1e6387536ee24
+      internalID: 1520897288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_32
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 66
+        width: 11
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4295452aa5b424c4ba5280135cee8532
+      internalID: 209232828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_34
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e855a1bfe062dc4449bdb78b32e12cd3
+      internalID: -829716993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_36
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 77
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f205b4b96133a924884187a11de62b5c
+      internalID: -278769804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_37
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2972e8d85e8a044bbaa1577f174be6b
+      internalID: -1216035733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_39
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921580bb508bb82468d37a772fce73bb
+      internalID: -1343673044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_0
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 128
+        width: 52
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd45dca5180a7f942b14784b63ce71fa
+      internalID: -889709426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_2
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 197
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071bc5c148b84c9408eaa0330ab79685
+      internalID: -1629252236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_6
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 198
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658846dd22f470049b114709500ebf1f
+      internalID: -1854960908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_8
+      rect:
+        serializedVersion: 2
+        x: 2479
+        y: 0
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b9720c1dedb3441b6d4c5bc75ffc0d
+      internalID: 847222283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_12
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 260
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3cb943872c70f4489f5b58c4ca5c102
+      internalID: 2067631189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_17
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 131
+        width: 61
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c7b31c9c5e0e84e947c2304dbfe0b9
+      internalID: -2100355653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_18
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 67
+        width: 55
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5472b8c7de8fc43aa98f28bfc964cf
+      internalID: 340377618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_19
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 70
+        width: 10
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd46944f5c815df44a31c1e1dcc497ff
+      internalID: 1892379248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_21
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 66
+        width: 65
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3c9aa286e6e664e99859936bce7c5b
+      internalID: -2138124204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ_ParticleSheet-uhd_22
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 1
+        width: 63
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a081cba18e2994b84a5e24f2bbcc4f
+      internalID: -759645636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GJ_ParticleSheet-uhd_0: -889709426
+      GJ_ParticleSheet-uhd_1: -1646682866
+      GJ_ParticleSheet-uhd_10: -1602128388
+      GJ_ParticleSheet-uhd_11: -1641669446
+      GJ_ParticleSheet-uhd_12: 2067631189
+      GJ_ParticleSheet-uhd_13: 1278369492
+      GJ_ParticleSheet-uhd_14: 2107865982
+      GJ_ParticleSheet-uhd_15: 1072843741
+      GJ_ParticleSheet-uhd_16: -1822467347
+      GJ_ParticleSheet-uhd_17: -2100355653
+      GJ_ParticleSheet-uhd_18: 340377618
+      GJ_ParticleSheet-uhd_19: 1892379248
+      GJ_ParticleSheet-uhd_2: -1629252236
+      GJ_ParticleSheet-uhd_20: -291778836
+      GJ_ParticleSheet-uhd_21: -2138124204
+      GJ_ParticleSheet-uhd_22: -759645636
+      GJ_ParticleSheet-uhd_23: -962010812
+      GJ_ParticleSheet-uhd_24: -1573932361
+      GJ_ParticleSheet-uhd_25: -900322276
+      GJ_ParticleSheet-uhd_26: 902829624
+      GJ_ParticleSheet-uhd_27: -1068638558
+      GJ_ParticleSheet-uhd_28: -1438447760
+      GJ_ParticleSheet-uhd_29: 173616339
+      GJ_ParticleSheet-uhd_3: -683693833
+      GJ_ParticleSheet-uhd_30: 813890939
+      GJ_ParticleSheet-uhd_31: 1520897288
+      GJ_ParticleSheet-uhd_32: 209232828
+      GJ_ParticleSheet-uhd_33: -2002947352
+      GJ_ParticleSheet-uhd_34: -829716993
+      GJ_ParticleSheet-uhd_35: 931358133
+      GJ_ParticleSheet-uhd_36: -278769804
+      GJ_ParticleSheet-uhd_37: -1216035733
+      GJ_ParticleSheet-uhd_38: -777976741
+      GJ_ParticleSheet-uhd_39: -1343673044
+      GJ_ParticleSheet-uhd_4: -1212849645
+      GJ_ParticleSheet-uhd_5: -108068975
+      GJ_ParticleSheet-uhd_6: -1854960908
+      GJ_ParticleSheet-uhd_7: -2055820280
+      GJ_ParticleSheet-uhd_8: 847222283
+      GJ_ParticleSheet-uhd_9: 1378406947
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

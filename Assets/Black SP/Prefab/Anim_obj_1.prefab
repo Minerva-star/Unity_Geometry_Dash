@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5435130475799047429}
   - component: {fileID: 5435130475799047426}
   - component: {fileID: 5435130475799047427}
+  - component: {fileID: 1622215309047674108}
   m_Layer: 0
   m_Name: Anim_obj_1
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: eb364a95b73b58342b30a97d5be8aa70, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.14509805, g: 0.40000004, b: 0.627451, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -122,3 +123,19 @@ MonoBehaviour:
   - {fileID: 21300008, guid: eb364a95b73b58342b30a97d5be8aa70, type: 3}
   - {fileID: 21300010, guid: eb364a95b73b58342b30a97d5be8aa70, type: 3}
   SpeedOfChange: 0.01
+--- !u!70 &1622215309047674108
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5435130475799047431}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000000022781355, y: 1.0388902}
+  m_Size: {x: 1.6700153, y: 1.7777982}
+  m_Direction: 0

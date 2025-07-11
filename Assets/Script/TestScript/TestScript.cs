@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TestScript : MonoBehaviour
 {
-    public Text showText;
+
     void Start()
     {
 
-        //progressText.text = $"进度: {progress:F1}%";
+        //progressText.text = $"锟斤拷锟斤拷: {progress:F1}%";
         float progress = 98.763f;
-        showText.text = $"进度: {progress:F1}%";
+
     }
 
     // Update is called once per frame

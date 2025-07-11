@@ -1,0 +1,971 @@
+fileFormatVersion: 2
+guid: 435fda6de9fa9bd49a420dcdc2f86b93
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 12
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 0
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 0
+  flipbookColumns: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2579
+        width: 2693
+        height: 1517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2c64bc6fca20b47906831739997eff
+      internalID: -549136791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_1
+      rect:
+        serializedVersion: 2
+        x: 3882
+        y: 3969
+        width: 145
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9969c6d50a651914ea2d9c7e8f556c19
+      internalID: -1820916165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_2
+      rect:
+        serializedVersion: 2
+        x: 4029
+        y: 3981
+        width: 62
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20fa74c7525f4a418574ee111a17cdc
+      internalID: 1916793633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_3
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 3232
+        width: 16
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c919b486fd1af114cb2a39abfd0ffd55
+      internalID: -630167056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_4
+      rect:
+        serializedVersion: 2
+        x: 3904
+        y: 3858
+        width: 108
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bde1d7cd1dd7d9479564b91df11d2ba
+      internalID: 492664429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_5
+      rect:
+        serializedVersion: 2
+        x: 4029
+        y: 3933
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6a8dac4340d5f40a66b7cdd8d0dd37
+      internalID: -1919616144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_6
+      rect:
+        serializedVersion: 2
+        x: 4004
+        y: 3906
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39c27ef9c91da242956a2147b8aef61
+      internalID: 1713476170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_7
+      rect:
+        serializedVersion: 2
+        x: 4024
+        y: 3845
+        width: 48
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d495d9d7f79d1e4bae1c6308cc9c35b
+      internalID: 95178264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_8
+      rect:
+        serializedVersion: 2
+        x: 3886
+        y: 3702
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bdae66400f36ae47b5002a3cefb7cae
+      internalID: 577326510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_9
+      rect:
+        serializedVersion: 2
+        x: 4024
+        y: 3803
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e157e8afb35fdc40b6839976d410fb3
+      internalID: 500780485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_10
+      rect:
+        serializedVersion: 2
+        x: 4011
+        y: 3474
+        width: 33
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6d4e87926c2a342b32d2edba368d67
+      internalID: 723074036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_11
+      rect:
+        serializedVersion: 2
+        x: 4056
+        y: 3792
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be11b2051cf794f42afe2dcdc498a522
+      internalID: -2028630360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_12
+      rect:
+        serializedVersion: 2
+        x: 3870
+        y: 3577
+        width: 105
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e0f2ae8803fd0459f76ce02acf5cc4
+      internalID: 202490046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_13
+      rect:
+        serializedVersion: 2
+        x: 3867
+        y: 3344
+        width: 156
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0683646707ed1a24b81a0a58b389e253
+      internalID: 2086036388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_14
+      rect:
+        serializedVersion: 2
+        x: 3563
+        y: 2797
+        width: 425
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fb7a4fce973584c9d5e439cc786dec
+      internalID: 1472654601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_15
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 186
+        width: 1556
+        height: 1330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749c4d4abc7efcc4e8f242edc989a8ec
+      internalID: -265786598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_17
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 2207
+        width: 582
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceba3e44cc7e20c449cc90c0211c0f11
+      internalID: -1810553978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_18
+      rect:
+        serializedVersion: 2
+        x: 3422
+        y: 1473
+        width: 401
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8687f29a1953a1544bd743f9f4bb1ef4
+      internalID: 407245746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_19
+      rect:
+        serializedVersion: 2
+        x: 3422
+        y: 1821
+        width: 466
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587099af0b8cc754dbacaa50cf8c24bf
+      internalID: -1985888004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 136
+        width: 386
+        height: 1277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85a9c652e08a1249ad8fc3a78e0fa12
+      internalID: 1190062130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_21
+      rect:
+        serializedVersion: 2
+        x: 3489
+        y: 1162
+        width: 257
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee793a2905a96440a8956090307f8e6
+      internalID: -113193288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_22
+      rect:
+        serializedVersion: 2
+        x: 3823
+        y: 1288
+        width: 259
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c5fece75e167b4fb1e69c50ad55c64
+      internalID: -238245705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_23
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 153
+        width: 724
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eefe795d09aeeb40970e2b123ad1223
+      internalID: -971240562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_24
+      rect:
+        serializedVersion: 2
+        x: 3555
+        y: 891
+        width: 247
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd47be5d7668884999ba98647a68597
+      internalID: 1992870566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_25
+      rect:
+        serializedVersion: 2
+        x: 3802
+        y: 815
+        width: 294
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8185a169ec9c64440bd8eab9f12ac263
+      internalID: -521619095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_26
+      rect:
+        serializedVersion: 2
+        x: 3554
+        y: 507
+        width: 357
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c3a76f81913ca4dbad1e1c33e6de40
+      internalID: 1283507503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_27
+      rect:
+        serializedVersion: 2
+        x: 2682
+        y: 153
+        width: 354
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b10fbbaaf5487847b71cd10925a797e
+      internalID: 1151431893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_16
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 529
+        width: 290
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e273896740b3c469ffdd1631967bd7
+      internalID: 58848481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_28
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 529
+        width: 293
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60da4cbd25452a4a9349c4f23c047db
+      internalID: 1587045646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_29
+      rect:
+        serializedVersion: 2
+        x: 3264
+        y: 528
+        width: 288
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8387a5941060b49bdf20a9bb2b3d68
+      internalID: 221752959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_30
+      rect:
+        serializedVersion: 2
+        x: 3033
+        y: 232
+        width: 348
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e312113307f2db42b02410a47732823
+      internalID: -1921865696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_31
+      rect:
+        serializedVersion: 2
+        x: 3810
+        y: 1067
+        width: 257
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f3fa797d1bf7c4dbfc57c57c276a56
+      internalID: 1072470021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_32
+      rect:
+        serializedVersion: 2
+        x: 3824
+        y: 1546
+        width: 271
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189d248324b6cea4da1636d7e11e94dc
+      internalID: 1098308936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2259
+        width: 1893
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8982eb0f950a4c41b30b9dcd62c64cf
+      internalID: 1627648313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2425
+        width: 1979
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753f3d21855196241b171065bb596574
+      internalID: -1628044459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_35
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 2559
+        width: 792
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5701d10b08897ca4e8d4ded74ea67ac7
+      internalID: -167248653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_36
+      rect:
+        serializedVersion: 2
+        x: 3515
+        y: 3221
+        width: 352
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2054c497afba0c84b9b5b2fd1a502e13
+      internalID: -213474402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_IngameVisuals_BossBarracuda_37
+      rect:
+        serializedVersion: 2
+        x: 2691
+        y: 3710
+        width: 892
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135b4e294f30e6343867122e644cc5de
+      internalID: 212791480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d3fe13b2c3016aa41862c06d3325965a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      JSB_IngameVisuals_BossBarracuda_0: -549136791
+      JSB_IngameVisuals_BossBarracuda_1: -1820916165
+      JSB_IngameVisuals_BossBarracuda_10: 723074036
+      JSB_IngameVisuals_BossBarracuda_11: -2028630360
+      JSB_IngameVisuals_BossBarracuda_12: 202490046
+      JSB_IngameVisuals_BossBarracuda_13: 2086036388
+      JSB_IngameVisuals_BossBarracuda_14: 1472654601
+      JSB_IngameVisuals_BossBarracuda_15: -265786598
+      JSB_IngameVisuals_BossBarracuda_16: 58848481
+      JSB_IngameVisuals_BossBarracuda_17: -1810553978
+      JSB_IngameVisuals_BossBarracuda_18: 407245746
+      JSB_IngameVisuals_BossBarracuda_19: -1985888004
+      JSB_IngameVisuals_BossBarracuda_2: 1916793633
+      JSB_IngameVisuals_BossBarracuda_20: 1190062130
+      JSB_IngameVisuals_BossBarracuda_21: -113193288
+      JSB_IngameVisuals_BossBarracuda_22: -238245705
+      JSB_IngameVisuals_BossBarracuda_23: -971240562
+      JSB_IngameVisuals_BossBarracuda_24: 1992870566
+      JSB_IngameVisuals_BossBarracuda_25: -521619095
+      JSB_IngameVisuals_BossBarracuda_26: 1283507503
+      JSB_IngameVisuals_BossBarracuda_27: 1151431893
+      JSB_IngameVisuals_BossBarracuda_28: 1587045646
+      JSB_IngameVisuals_BossBarracuda_29: 221752959
+      JSB_IngameVisuals_BossBarracuda_3: -630167056
+      JSB_IngameVisuals_BossBarracuda_30: -1921865696
+      JSB_IngameVisuals_BossBarracuda_31: 1072470021
+      JSB_IngameVisuals_BossBarracuda_32: 1098308936
+      JSB_IngameVisuals_BossBarracuda_33: 1627648313
+      JSB_IngameVisuals_BossBarracuda_34: -1628044459
+      JSB_IngameVisuals_BossBarracuda_35: -167248653
+      JSB_IngameVisuals_BossBarracuda_36: -213474402
+      JSB_IngameVisuals_BossBarracuda_37: 212791480
+      JSB_IngameVisuals_BossBarracuda_4: 492664429
+      JSB_IngameVisuals_BossBarracuda_5: -1919616144
+      JSB_IngameVisuals_BossBarracuda_6: 1713476170
+      JSB_IngameVisuals_BossBarracuda_7: 95178264
+      JSB_IngameVisuals_BossBarracuda_8: 577326510
+      JSB_IngameVisuals_BossBarracuda_9: 500780485
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

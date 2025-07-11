@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Obstacle
   - LoseParticle
+  - SpeedZone
+  - SpeedItem
   layers:
   - Default
   - TransparentFX

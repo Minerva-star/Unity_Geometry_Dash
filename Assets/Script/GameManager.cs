@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Analytics;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,14 +21,16 @@ public class GameManager : MonoBehaviour
     public UIManager uiManager;
     public BackgroundMover background;
 
-    public float totalMapLength = 242f;
+    [Header("距离计算")]
+    public Transform finishLine; // 终点线物体
+    public float totalMapLength = 242f; // 手动设置的总长度（如果finishLine为空则使用此值）
     private float currentProgress = 0f;
 
 
 
     public GameObject pausePanel;
     public GameObject gameOverUI;
-    public Text finalProgressText;
+    public TextMeshProUGUI finalProgressText;
     public Button restartButton;
 
 
@@ -101,9 +104,28 @@ public class GameManager : MonoBehaviour
 
     private void UpdateProgress()
     {
-        currentProgress = (player.transform.position.x) / totalMapLength * 100;
+        // 计算实际的总长度
+        float actualTotalLength = GetTotalMapLength();
+        
+        // 计算进度百分比
+        currentProgress = (player.transform.position.x) / actualTotalLength * 100;
         currentProgress = Mathf.Clamp(currentProgress, 0f, 100f);
         uiManager.UpdateProgressText(currentProgress);
+    }
+    
+    // 获取总地图长度
+    private float GetTotalMapLength()
+    {
+        // 如果设置了终点线，使用终点线的X坐标作为总长度
+        if (finishLine != null)
+        {
+            return finishLine.position.x;
+        }
+        else
+        {
+            // 否则使用手动设置的值
+            return totalMapLength;
+        }
     }
 
     private void OnPlayerDeath()
@@ -219,6 +241,33 @@ public class GameManager : MonoBehaviour
             else
                 audio.UnPause();
         }
+    }
+    
+    // 设置终点线
+    public void SetFinishLine(Transform finishLineTransform)
+    {
+        finishLine = finishLineTransform;
+        Debug.Log($"设置终点线位置: {finishLine.position.x}");
+    }
+    
+    // 获取当前总长度
+    public float GetCurrentTotalLength()
+    {
+        return GetTotalMapLength();
+    }
+    
+    // 检查玩家是否到达终点
+    public bool IsPlayerAtFinish()
+    {
+        if (finishLine == null) return false;
+        return player.transform.position.x >= finishLine.position.x;
+    }
+    
+    // 获取玩家到终点的距离
+    public float GetDistanceToFinish()
+    {
+        if (finishLine == null) return 0f;
+        return finishLine.position.x - player.transform.position.x;
     }
 
 

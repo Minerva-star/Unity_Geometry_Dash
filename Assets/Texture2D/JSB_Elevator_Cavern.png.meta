@@ -1,0 +1,1279 @@
+fileFormatVersion: 2
+guid: feb5ff0c5554b734eb4bfffe8e63a070
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 12
+  maxTextureSize: 4096
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 16
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 0
+  flipbookColumns: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 942
+        width: 1540
+        height: 3154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ba0cd7a7e3cc34f80ec9f36b056633
+      internalID: -1460190220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_1
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 3521
+        width: 2223
+        height: 575
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c7b7433882a544e8a458da1d6636a2
+      internalID: 182093942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_2
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 3835
+        width: 261
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d1b6380a170534888839ccc957ac62
+      internalID: 1149510025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_3
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 4001
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f63bb5791007141828979cc1b5fc5d
+      internalID: 1586798095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_4
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 4008
+        width: 43
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b083fa99cea8a946826ce4d11ca239c
+      internalID: 811656189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_5
+      rect:
+        serializedVersion: 2
+        x: 4059
+        y: 3990
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8169cb225047e374ca8f560be869853f
+      internalID: 2015099327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_6
+      rect:
+        serializedVersion: 2
+        x: 4076
+        y: 3995
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4f6b6a0460c6d49a75bc4358b6c28e
+      internalID: -649088656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_7
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 3974
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e62215144ceb4741a7335aa765bca2d
+      internalID: 2134388606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_8
+      rect:
+        serializedVersion: 2
+        x: 4064
+        y: 3981
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675fa580b27b6f942904d42eaf9bbee5
+      internalID: -15435363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_9
+      rect:
+        serializedVersion: 2
+        x: 4059
+        y: 3963
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00d0c312e408f24f98ab5b8ddde88b7
+      internalID: -317117704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_10
+      rect:
+        serializedVersion: 2
+        x: 4076
+        y: 3968
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d968a9adf1259754c8716541c38e69de
+      internalID: -1702003450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_11
+      rect:
+        serializedVersion: 2
+        x: 3986
+        y: 3859
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f7201717a940a40bad9bdb352b3c09
+      internalID: -432917361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_12
+      rect:
+        serializedVersion: 2
+        x: 4053
+        y: 3709
+        width: 6
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971778a39c0472f42ba6c55564f20ba8
+      internalID: 736788272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_13
+      rect:
+        serializedVersion: 2
+        x: 4087
+        y: 3737
+        width: 6
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d9cec99637fb642a4f97b4adef8a90
+      internalID: -2033933248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_14
+      rect:
+        serializedVersion: 2
+        x: 3985
+        y: 3546
+        width: 67
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2b27e390c55f24eb16a23cb231c281
+      internalID: -63306971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_15
+      rect:
+        serializedVersion: 2
+        x: 3769
+        y: 3476
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b4489097f284f4f870907135247ee9
+      internalID: -1456621062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_16
+      rect:
+        serializedVersion: 2
+        x: 3891
+        y: 3467
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d638eb879f84945810f46c091e8523
+      internalID: -1513649889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_17
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 1864
+        width: 969
+        height: 1603
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e426cf840bee843b703140d98d3063
+      internalID: -800961376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 1159
+        height: 1225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749f14e27ffed274c840444e273f040c
+      internalID: 1675113922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_19
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1208
+        width: 107
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e656a391846d1ac43a16d8e30600d1a0
+      internalID: -2001710271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_20
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 1211
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2192526268ae69d4d945b1dac07c073f
+      internalID: -1372085535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_21
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1004
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ee2b0a34abb304d9d2563902e40079
+      internalID: 245513458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_22
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 541
+        width: 371
+        height: 399
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807463af9460a34459ae891233495914
+      internalID: 806980459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_23
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 579
+        width: 209
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7252a82d505aee341badb7ab4f296465
+      internalID: 14387359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 32
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbee43b4cb78134983fc12985241d4d
+      internalID: 1315096077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_26
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 37
+        width: 35
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031ff5d22ee653445a8699935d5880c1
+      internalID: -204369450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_27
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 38
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc9582d3294e7d48a662146d6b1271e
+      internalID: -668351037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_28
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 112
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2df207df74d30545b27f92deb7e6c86
+      internalID: -1809596997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_29
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 36
+        width: 89
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebfe6f23572ce34093f2d620b02e3bf
+      internalID: -85066380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_30
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 40
+        width: 88
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f50f8adfb633a43b866aedfc29b322
+      internalID: -1741373322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_32
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 55
+        width: 40
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1a6d6b37392f6498ca9a2a288b86a9
+      internalID: 2016022100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_33
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 56
+        width: 57
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec34cef623374549899b5fbd637f193
+      internalID: 335080630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_34
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 62
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1253bd7384134374186f2c0b9f06f276
+      internalID: 2007298137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_35
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 65
+        width: 75
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc3bda07c9bbb34ca64e4fbb2933065
+      internalID: 2020060550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_36
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 70
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cedf69c40f26964aa85a841d8027dad
+      internalID: 828832843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_39
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 120
+        width: 381
+        height: 421
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb141a00013854045832225a5b24c2c8
+      internalID: 1545524064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_40
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 14
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704d8e8e00320454baf4c23f24669000
+      internalID: 1974018534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_41
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 49
+        width: 276
+        height: 528
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcb9fed91dc049479e191a26ffabdbe
+      internalID: 1167484061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_42
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 51
+        width: 256
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70484dfdb296c84a944071ae17cb7e9
+      internalID: -1366545185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_43
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 100
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21223feaea207ed43806763f2ece490e
+      internalID: -1694871575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_44
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 101
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84b64eef6c4a5048a1a69de627160f7
+      internalID: -1879068561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed3ad945f5bd5544a2576a75824c990
+      internalID: 1190370938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_46
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2
+        width: 167
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0ba897802bd8742b3cc23bd87983b8
+      internalID: -441527510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_47
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 3
+        width: 40
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e55c70a0918bfc4c865093bea3b6e83
+      internalID: 1439719414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_48
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 6
+        width: 167
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d189cfc6f9c4e0c4c82dc478b5f6e0b8
+      internalID: -387501983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_49
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 3
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f2ddb1cb1bb9e41944a929f5b4080d
+      internalID: 35493323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_51
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646bcdcdea6de3645be53054df08baad
+      internalID: 410969964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_25
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 4
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68635b09b0236bc40b519edc06a146c2
+      internalID: -1642032483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_31
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 82
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbdf7c1d1917d346ada63342f1bfafe
+      internalID: 2038874065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_37
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 1433
+        width: 195
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305ce0b4e9dd451499c4ba6d9a11c038
+      internalID: -1491377307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_38
+      rect:
+        serializedVersion: 2
+        x: 4052
+        y: 3935
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a92295b2b40c9b4f8293360564fe765
+      internalID: 2002017233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JSB_Elevator_Cavern_50
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 42
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b1631f07dfdef438dd6755cad9b13f
+      internalID: -945096224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bc5bd799e7b46e34d95e81324e42fde0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      JSB_Elevator_Cavern_0: -1460190220
+      JSB_Elevator_Cavern_1: 182093942
+      JSB_Elevator_Cavern_10: -1702003450
+      JSB_Elevator_Cavern_11: -432917361
+      JSB_Elevator_Cavern_12: 736788272
+      JSB_Elevator_Cavern_13: -2033933248
+      JSB_Elevator_Cavern_14: -63306971
+      JSB_Elevator_Cavern_15: -1456621062
+      JSB_Elevator_Cavern_16: -1513649889
+      JSB_Elevator_Cavern_17: -800961376
+      JSB_Elevator_Cavern_18: 1675113922
+      JSB_Elevator_Cavern_19: -2001710271
+      JSB_Elevator_Cavern_2: 1149510025
+      JSB_Elevator_Cavern_20: -1372085535
+      JSB_Elevator_Cavern_21: 245513458
+      JSB_Elevator_Cavern_22: 806980459
+      JSB_Elevator_Cavern_23: 14387359
+      JSB_Elevator_Cavern_24: 1315096077
+      JSB_Elevator_Cavern_25: -1642032483
+      JSB_Elevator_Cavern_26: -204369450
+      JSB_Elevator_Cavern_27: -668351037
+      JSB_Elevator_Cavern_28: -1809596997
+      JSB_Elevator_Cavern_29: -85066380
+      JSB_Elevator_Cavern_3: 1586798095
+      JSB_Elevator_Cavern_30: -1741373322
+      JSB_Elevator_Cavern_31: 2038874065
+      JSB_Elevator_Cavern_32: 2016022100
+      JSB_Elevator_Cavern_33: 335080630
+      JSB_Elevator_Cavern_34: 2007298137
+      JSB_Elevator_Cavern_35: 2020060550
+      JSB_Elevator_Cavern_36: 828832843
+      JSB_Elevator_Cavern_37: -1491377307
+      JSB_Elevator_Cavern_38: 2002017233
+      JSB_Elevator_Cavern_39: 1545524064
+      JSB_Elevator_Cavern_4: 811656189
+      JSB_Elevator_Cavern_40: 1974018534
+      JSB_Elevator_Cavern_41: 1167484061
+      JSB_Elevator_Cavern_42: -1366545185
+      JSB_Elevator_Cavern_43: -1694871575
+      JSB_Elevator_Cavern_44: -1879068561
+      JSB_Elevator_Cavern_45: 1190370938
+      JSB_Elevator_Cavern_46: -441527510
+      JSB_Elevator_Cavern_47: 1439719414
+      JSB_Elevator_Cavern_48: -387501983
+      JSB_Elevator_Cavern_49: 35493323
+      JSB_Elevator_Cavern_5: 2015099327
+      JSB_Elevator_Cavern_50: -945096224
+      JSB_Elevator_Cavern_51: 410969964
+      JSB_Elevator_Cavern_6: -649088656
+      JSB_Elevator_Cavern_7: 2134388606
+      JSB_Elevator_Cavern_8: -15435363
+      JSB_Elevator_Cavern_9: -317117704
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

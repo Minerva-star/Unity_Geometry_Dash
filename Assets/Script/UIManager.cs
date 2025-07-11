@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class UIManager : MonoBehaviour
     public GameObject gameOverPanel;
 
     // 主游戏UI元素
-    public Text progressText;
+    public TextMeshProUGUI progressText;
     public Button pauseButton;
 
     // 暂停面板元素
@@ -20,8 +21,8 @@ public class UIManager : MonoBehaviour
     public Button quitButton;
 
     // 游戏结束面板元素
-    public Text finalProgressText;
-    public Text highRecordProgressText;
+    public TextMeshProUGUI finalProgressText;
+    public TextMeshProUGUI highRecordProgressText;
     public Button gameOverRestartButton;
     public Button gameOverQuitButton;
 
@@ -57,15 +58,15 @@ public class UIManager : MonoBehaviour
             gameOverQuitButton.onClick.AddListener(OnQuitButtonClicked);
     }
 
-    
+
     // 在 UIManager.cs 里添加控制暂停键显示的方法
     public void SetPauseButtonVisible(bool visible)
     {
         if (pauseButton != null)
-         pauseButton.gameObject.SetActive(visible);
-        
+            pauseButton.gameObject.SetActive(visible);
+
     }
-    
+
 
     public void SetCurrentProgressVisible(bool visible)
     {
@@ -141,11 +142,11 @@ public class UIManager : MonoBehaviour
 
     private void OnQuitButtonClicked()
     {
-        #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-        #else
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
                     Application.Quit();
-        #endif
+#endif
     }
 
 
