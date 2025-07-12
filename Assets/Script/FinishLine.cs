@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class FinishLine : MonoBehaviour
 {
@@ -8,12 +9,26 @@ public class FinishLine : MonoBehaviour
     
     [Header("终点效果")]
     public bool showFinishEffect = true; // 是否显示终点效果
-    public GameObject finishEffectPrefab; // 终点特效预制体
+    // public GameObject finishEffectPrefab; // 终点特效预制体
+    
+    [Header("胜利音效")]
+    public AudioClip victorySound1; // 第一个音效
+    public AudioClip victorySound2; // 第二个音效
+    public float overlapTime = 3f; // 第一个音效播放多少秒后开始第二个
     
     private GameManager gameManager;
     
+    private AudioSource audioSource;
+    
     private void Start()
     {
+        // 获取或添加AudioSource
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        
         if (autoRegisterToGameManager)
         {
             RegisterToGameManager();
@@ -44,26 +59,102 @@ public class FinishLine : MonoBehaviour
         }
     }
     
+    private bool hasTriggeredWin = false; // 防止多次触发
+
     // 玩家到达终点时的处理
     private void OnPlayerReachedFinish()
     {
+        if (hasTriggeredWin) return;
+        hasTriggeredWin = true;
+
         if (showFinishEffect)
         {
-            ShowFinishEffect();
+            // ShowFinishEffect();
         }
         
         Debug.Log("玩家到达终点！");
-        
-        // 可以在这里添加胜利逻辑
-        // 比如显示胜利UI、播放胜利音效等
+
+        // 处理通关后的游戏状态
+        HandleVictoryState();
+
+        // 弹出胜利面板
+        if (gameManager != null && gameManager.uiManager != null)
+        {
+            gameManager.uiManager.ShowWinPanel();
+        }
+
+        // 播放胜利音效序列
+        StartCoroutine(PlayVictorySounds());
+    }
+
+    // 处理通关后的游戏状态
+    private void HandleVictoryState()
+    {
+        if (gameManager != null)
+        {
+            // 暂停背景移动
+            if (gameManager.background != null)
+            {
+                gameManager.background.SetPaused(true);
+            }
+
+            // 暂停玩家移动
+            if (gameManager.player != null)
+            {
+                gameManager.player.SetGamePaused(true);
+                
+                // 隐藏玩家
+                SpriteRenderer playerRenderer = gameManager.player.GetComponent<SpriteRenderer>();
+                if (playerRenderer != null)
+                {
+                    playerRenderer.enabled = false;
+                }
+                
+                // 隐藏玩家痕迹
+                TrailController trailController = gameManager.player.trailController;
+                if (trailController != null)
+                {
+                    trailController.ClearTrail();
+                    trailController.enabled = false;
+                }
+            }
+
+            // 暂停背景音乐
+            gameManager.SetMusicPause(true);
+        }
     }
     
-    // 显示终点特效
-    private void ShowFinishEffect()
+    // // 显示终点特效
+    // private void ShowFinishEffect()
+    // {
+    //     if (finishEffectPrefab != null)
+    //     {
+    //         Instantiate(finishEffectPrefab, transform.position, transform.rotation);
+    //     }
+    // }
+    
+    private IEnumerator PlayVictorySounds()
     {
-        if (finishEffectPrefab != null)
+        // 使用FinishLine自己的AudioSource播放胜利音效
+        if (audioSource != null)
         {
-            Instantiate(finishEffectPrefab, transform.position, transform.rotation);
+            if (victorySound1 != null)
+            {
+                audioSource.PlayOneShot(victorySound1);
+                Debug.Log("播放第一个胜利音效");
+                
+                yield return new WaitForSeconds(overlapTime);
+                
+                if (victorySound2 != null)
+                {
+                    audioSource.PlayOneShot(victorySound2);
+                    Debug.Log("播放第二个胜利音效（与第一个重叠）");
+                }
+            }
+        }
+        else
+        {
+            Debug.LogWarning("FinishLine没有AudioSource组件，无法播放胜利音效");
         }
     }
     

@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
     {
         Playing,
         Paused,
-        GameOver
+        GameOver,
+        Victory
     }
 
     private GameState currentState = GameState.Playing;
@@ -197,12 +198,18 @@ public class GameManager : MonoBehaviour
         {
             player.SetGamePaused(false);
         }
+        if (background != null)
+        {
+            background.SetPaused(false);
+        }
+        SetMusicPause(false); // 恢复音乐播放
+        
         if (pausePanel != null)
         {
             pausePanel.SetActive(false);
         }
         if (uiManager != null)
-            uiManager.SetPauseButtonVisible(false);
+            uiManager.SetPauseButtonVisible(true); // 显示暂停按钮
     }
 
 

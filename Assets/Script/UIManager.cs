@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public GameObject mainGameUI;
     public GameObject pausePanel;
     public GameObject gameOverPanel;
+    public GameObject winPanel;
 
     // 主游戏UI元素
     public TextMeshProUGUI progressText;
@@ -113,6 +114,18 @@ public class UIManager : MonoBehaviour
         finalProgressText.text = $"最终进度: {finalProgress:F1}%";
         highRecordProgressText.text = $"最高记录: {highScore:F1}%";
 
+    }
+
+    public void ShowWinPanel()
+    {
+        if (winPanel != null)
+            winPanel.SetActive(true);
+        // 其它UI隐藏
+        if (mainGameUI != null) mainGameUI.SetActive(false);
+        if (pausePanel != null) pausePanel.SetActive(false);
+        if (gameOverPanel != null) gameOverPanel.SetActive(false);
+        
+        Debug.Log("显示胜利面板");
     }
 
 
