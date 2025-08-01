@@ -60,12 +60,35 @@ public class PlayerBehavior : MonoBehaviour
     public enum ControlMode { JumpClick, FlyClick, FreeMove }
     public ControlMode currentMode = ControlMode.FlyClick;
 
+    [Header("音效设置")]
+    public AudioClip jumpSound; // 跳跃音效
+    public AudioClip deathSound; // 死亡音效
+    public float jumpSoundVolume = 0.5f; // 跳跃音效音量
+    public float deathSoundVolume = 0.7f; // 死亡音效音量
+
+    private AudioSource audioSource;
+    private bool hasPlayedJumpSound = false; // 防止连续播放跳跃音效
+
+    private bool hasStartedAttempt = false; // 是否已经开始本次尝试
+    private bool isFirstGame = true; // 是否是第一次游戏
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         mainCamera = Camera.main;
         _collider = GetComponent<Collider2D>();
         // _trail = GetComponent<TrailRenderer>();
+
+        // 获取或添加AudioSource组件
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        // 设置AudioSource属性
+        audioSource.playOnAwake = false;
+        audioSource.volume = 1f;
 
         _rb.gravityScale = 0f;
 
@@ -87,17 +110,24 @@ public class PlayerBehavior : MonoBehaviour
 
 
         if (isGamePaused || isGameOver) return;
+
         // 检测跳跃输入
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
+            // 第一次跳跃时开始计数
+            if (!hasStartedAttempt)
+            {
+                StartNewAttempt();
+            }
+
+            // 播放跳跃音效
+            PlayJumpSound();
+
             // 直接设置向上的速度，而不是添加力
-            // 这样可以避免连续点击时的累积效果
             Vector2 currentVel = _rb.velocity;
             currentVel.y = jumpForce;
             _rb.velocity = currentVel;
-
         }
-
 
         // 检测长按跳跃
         if (Input.GetKey(KeyCode.Space) || Input.GetMouseButton(0))
@@ -115,7 +145,12 @@ public class PlayerBehavior : MonoBehaviour
                 currentVel.y += longPressJumpForce * Time.deltaTime;
                 _rb.velocity = currentVel;
             }
+        }
 
+        // 重置跳跃音效标志（当松开按键时）
+        if (Input.GetKeyUp(KeyCode.Space) || Input.GetMouseButtonUp(0))
+        {
+            hasPlayedJumpSound = false;
         }
 
         // 这个 x, y 是只读的   不能直接修改
@@ -129,6 +164,26 @@ public class PlayerBehavior : MonoBehaviour
         UpdateRotation();
         UpdateSpeedModifiers(); // 新增：更新速度修改器
 
+    }
+
+    /// <summary>
+    /// 开始新的尝试
+    /// </summary>
+    private void StartNewAttempt()
+    {
+        hasStartedAttempt = true;
+
+        // 增加尝试次数
+        AttemptCounter attemptCounter = AttemptCounter.Instance;
+        if (attemptCounter != null)
+        {
+            attemptCounter.IncrementAttempt();
+            Debug.Log($"开始新的尝试，当前尝试次数: {attemptCounter.GetCurrentAttempts()}");
+        }
+        else
+        {
+            Debug.LogWarning("AttemptCounter 为空，无法增加尝试次数");
+        }
     }
 
     // 新增：更新速度修改器
@@ -275,7 +330,7 @@ public class PlayerBehavior : MonoBehaviour
 
         if (isGamePaused || isGameOver) return;
 
-        //// 設置玩家在屏幕1/3处 
+        //// 設置玩家在屏幕1/3处
         //SetPlayerScreenPosition();
 
         //_rb.position += Vector2.right * 0.05f;
@@ -325,14 +380,20 @@ public class PlayerBehavior : MonoBehaviour
     //}
 
     public void OnTriggerEnter2D(Collider2D other)
-    { 
+    {
         Debug.Log("喔喔喔OnTriggerEnter2D");
         if (isGameOver || isGamePaused) return;
 
-        // 检测障碍物
+        ////  无敌 测试代码 注释
+        //if (other.CompareTag("Finish"))
+
+        ////// 检测障碍物
         if (other.CompareTag("Obstacle"))
         {
             isGameOver = true;
+
+            // 播放死亡音效
+            PlayDeathSound();
 
             _rb.velocity = Vector2.zero;
             _rb.isKinematic = true;
@@ -404,6 +465,8 @@ public class PlayerBehavior : MonoBehaviour
     {
         isGameOver = false;
         isGamePaused = false;
+        hasStartedAttempt = false; // 重置尝试标志，允许下次跳跃时重新计数
+        isFirstGame = false; // 标记不是第一次游戏
 
         _renderer.enabled = true;
         _collider.enabled = true;
@@ -417,6 +480,8 @@ public class PlayerBehavior : MonoBehaviour
 
         // 新增：重置速度修改器
         ClearAllSpeedModifiers();
+
+        Debug.Log("玩家重置完成，下次跳跃将开始新的尝试");
     }
 
     // 新增：获取当前速度信息（用于调试）
@@ -436,6 +501,67 @@ public class PlayerBehavior : MonoBehaviour
         }
 
         return info;
+    }
+
+    /// <summary>
+    /// 播放跳跃音效
+    /// </summary>
+    private void PlayJumpSound()
+    {
+        if (jumpSound != null && audioSource != null && !hasPlayedJumpSound)
+        {
+            audioSource.PlayOneShot(jumpSound, jumpSoundVolume);
+            hasPlayedJumpSound = true;
+        }
+    }
+
+    /// <summary>
+    /// 播放死亡音效
+    /// </summary>
+    private void PlayDeathSound()
+    {
+        if (deathSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(deathSound, deathSoundVolume);
+        }
+    }
+
+    /// <summary>
+    /// 播放自定义音效
+    /// </summary>
+    public void PlaySound(AudioClip clip, float volume = 1f)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clip, volume);
+        }
+    }
+
+    /// <summary>
+    /// 设置跳跃音效
+    /// </summary>
+    public void SetJumpSound(AudioClip newJumpSound)
+    {
+        jumpSound = newJumpSound;
+    }
+
+    /// <summary>
+    /// 设置死亡音效
+    /// </summary>
+    public void SetDeathSound(AudioClip newDeathSound)
+    {
+        deathSound = newDeathSound;
+    }
+
+    /// <summary>
+    /// 设置音效音量
+    /// </summary>
+    public void SetSoundVolume(float volume)
+    {
+        if (audioSource != null)
+        {
+            audioSource.volume = Mathf.Clamp01(volume);
+        }
     }
 
 }

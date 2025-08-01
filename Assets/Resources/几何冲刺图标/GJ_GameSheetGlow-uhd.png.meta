@@ -1028,7 +1028,7 @@ TextureImporter:
         width: 138
         height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1036,6 +1036,69 @@ TextureImporter:
       bones: []
       spriteID: a3e8e0a2ed615324faa0d4c89b351101
       internalID: -172205746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u8FDB\u51FB\u7684\u8FB9\u8FB9"
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 416
+        width: 147
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012d92f097fd11f42ae4d1a067b291bb
+      internalID: -249973827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u8FDB\u51FB\u7684\u89D2\u89D2"
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 121
+        width: 145
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfb6c88b1e518f4f97be99f3c0df26c
+      internalID: -968792690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u8FDB\u51FB\u89D2\u89D2"
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 1193
+        width: 58
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e41c818adaccd94ebfaec8b4203e7d1
+      internalID: -659223200
       vertices: []
       indices: 
       edges: []
@@ -1095,6 +1158,9 @@ TextureImporter:
       GJ_GameSheetGlow-uhd_7: -52891209
       GJ_GameSheetGlow-uhd_8: -439701406
       GJ_GameSheetGlow-uhd_9: -930135190
+      "\u8FDB\u51FB\u7684\u89D2\u89D2": -968792690
+      "\u8FDB\u51FB\u7684\u8FB9\u8FB9": -249973827
+      "\u8FDB\u51FB\u89D2\u89D2": -659223200
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

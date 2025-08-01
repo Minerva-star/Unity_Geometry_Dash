@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 596350907}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,19 +118,26 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!21 &7746739
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA OUTBASE8DIR_ON OUTBASE_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -188,6 +195,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -309,9 +317,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -371,17 +382,23 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &70619476
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ALPHACUTOFF_ON ETC1_EXTERNAL_ALPHA OUTBASE8DIR_ON PIXELATE_ON
-    _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - ALPHACUTOFF_ON
+  - OUTBASE8DIR_ON
+  - PIXELATE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -439,6 +456,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.904
@@ -624,16 +642,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &72928926
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA HOLOGRAM_ON
+  m_ValidKeywords:
+  - HOLOGRAM_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -691,6 +713,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -812,9 +835,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -874,16 +900,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &73084414
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA HSV_ON
+  m_ValidKeywords:
+  - HSV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -941,6 +971,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -1059,9 +1090,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -1121,16 +1155,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &85408337
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: BLUR_ON ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords:
+  - BLUR_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -1188,6 +1226,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -1373,16 +1412,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &87388692
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA POLARUV_ON
+  m_ValidKeywords:
+  - POLARUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -1440,6 +1483,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -1561,9 +1605,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -1623,16 +1670,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &108846146
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: COLORSWAP_ON ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords:
+  - COLORSWAP_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -1690,6 +1741,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -1876,16 +1928,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &111852238
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GRADIENT_ON
+  m_ValidKeywords:
+  - GRADIENT_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -1943,6 +1999,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -2129,16 +2186,21 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &139334897
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CLIPPING_ON ETC1_EXTERNAL_ALPHA ROTATEUV_ON
+  m_ValidKeywords:
+  - CLIPPING_ON
+  - ROTATEUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -2196,6 +2258,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -2381,16 +2444,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &150333392
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GHOST_ON
+  m_ValidKeywords:
+  - GHOST_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -2448,6 +2515,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -2569,9 +2637,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -2631,6 +2702,7 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &154474730
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,6 +2731,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 564363701}
   m_RootOrder: 3
@@ -2683,6 +2756,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2711,14 +2785,17 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 --- !u!21 &183278329
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA WIND_ON
+  m_ValidKeywords:
+  - WIND_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -2776,6 +2853,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -2897,9 +2975,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -2959,16 +3040,23 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &195375977
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA FADE_ON OUTBASE8DIR_ON PINCH_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - FADE_ON
+  - OUTBASE8DIR_ON
+  - PINCH_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -3026,6 +3114,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -3212,16 +3301,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &208665463
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA WAVEUV_ON
+  m_ValidKeywords:
+  - WAVEUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -3279,6 +3372,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -3400,9 +3494,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -3462,16 +3559,22 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &212554433
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CLIPPING_ON ETC1_EXTERNAL_ALPHA WAVEUV_ON WIND_ON
+  m_ValidKeywords:
+  - CLIPPING_ON
+  - WAVEUV_ON
+  - WIND_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -3529,6 +3632,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -3647,9 +3751,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -3709,17 +3816,28 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &217718272
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CHANGECOLOR2_ON CHANGECOLOR3_ON COLORSWAP_ON ETC1_EXTERNAL_ALPHA
-    GLOWTEX_ON GRADIENT2COL_ON GRADIENT_ON OUTBASE8DIR_ON _GLOWTEXUSED_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - CHANGECOLOR2_ON
+  - CHANGECOLOR3_ON
+  - COLORSWAP_ON
+  - GLOWTEX_ON
+  - GRADIENT2COL_ON
+  - GRADIENT_ON
+  - OUTBASE8DIR_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GLOWTEXUSED_ON
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -3777,6 +3895,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -3892,9 +4011,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -3953,17 +4075,26 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &288262069
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: COLORRAMP_ON ETC1_EXTERNAL_ALPHA GLOWTEX_ON OUTBASE8DIR_ON OUTBASE_ON
-    PIXELATE_ON _GLOWTEXUSED_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - COLORRAMP_ON
+  - GLOWTEX_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - PIXELATE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GLOWTEXUSED_ON
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -4021,6 +4152,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0
@@ -4142,9 +4274,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -4204,16 +4339,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &302907434
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA POSTERIZE_ON
+  m_ValidKeywords:
+  - POSTERIZE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -4271,6 +4410,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -4457,17 +4597,24 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &313393139
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA OUTBASE8DIR_ON OUTBASE_ON OUTTEX_ON _OUTLINE8DIRECTIONS_ON
-    _OUTLINETEXTOGGLE_ON
+  m_ValidKeywords:
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - OUTTEX_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
+  - _OUTLINETEXTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -4525,6 +4672,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -4646,9 +4794,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -4708,16 +4859,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &323921624
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CLIPPING_ON ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords:
+  - CLIPPING_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -4775,6 +4930,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -4960,17 +5116,26 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &327735240
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: BLUR_ON CLIPPING_ON CUSTOMBLENDING_ON DISTORT_ON ETC1_EXTERNAL_ALPHA
-    GLOW_ON WAVEUV_ON WIND_ON
+  m_ValidKeywords:
+  - BLUR_ON
+  - CLIPPING_ON
+  - DISTORT_ON
+  - GLOW_ON
+  - WAVEUV_ON
+  - WIND_ON
+  m_InvalidKeywords:
+  - CUSTOMBLENDING_ON
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -5028,6 +5193,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -5143,9 +5309,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -5205,6 +5374,7 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &356332865
 GameObject:
   m_ObjectHideFlags: 0
@@ -5234,6 +5404,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 564363701}
   m_RootOrder: 0
@@ -5274,6 +5445,7 @@ MonoBehaviour:
   m_Material: {fileID: 1774554235}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5298,14 +5470,20 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 --- !u!21 &430987701
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: BLUR_ON ETC1_EXTERNAL_ALPHA HITEFFECT_ON OUTBASE8DIR_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - BLUR_ON
+  - HITEFFECT_ON
+  - OUTBASE8DIR_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -5363,6 +5541,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -5478,9 +5657,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -5540,17 +5722,24 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &453643567
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA ONLYOUTLINE_ON OUTBASE8DIR_ON OUTBASE_ON
-    _ONLYOUTLINE_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - ONLYOUTLINE_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _ONLYOUTLINE_ON
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -5608,6 +5797,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -5726,9 +5916,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -5788,16 +5981,22 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &465147594
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GRADIENT_ON RADIALGRADIENT_ON _GRADISRADIAL_ON
+  m_ValidKeywords:
+  - GRADIENT_ON
+  - RADIALGRADIENT_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GRADISRADIAL_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -5855,6 +6054,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -6041,16 +6241,22 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &469847421
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: DOODLE_ON ETC1_EXTERNAL_ALPHA GLOWTEX_ON _GLOWTEXUSED_ON
+  m_ValidKeywords:
+  - DOODLE_ON
+  - GLOWTEX_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GLOWTEXUSED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -6108,6 +6314,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -6229,9 +6436,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -6291,6 +6501,7 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &535274221
 GameObject:
   m_ObjectHideFlags: 0
@@ -6319,6 +6530,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1005972827}
   m_Father: {fileID: 564363701}
@@ -6344,6 +6556,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6372,14 +6585,17 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 --- !u!21 &537809413
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA INNEROUTLINE_ON
+  m_ValidKeywords:
+  - INNEROUTLINE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -6437,6 +6653,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -6623,16 +6840,21 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &540543599
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: DISTORT_ON GLOW_ON WAVEUV_ON
+  m_ValidKeywords:
+  - DISTORT_ON
+  - GLOW_ON
+  - WAVEUV_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -6690,6 +6912,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -6870,6 +7093,7 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &564363697
 GameObject:
   m_ObjectHideFlags: 0
@@ -6928,6 +7152,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &564363700
 Canvas:
   m_ObjectHideFlags: 0
@@ -6945,6 +7170,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: -1
@@ -6959,6 +7185,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 356332866}
   - {fileID: 1302433542}
@@ -6974,14 +7201,17 @@ RectTransform:
   m_Pivot: {x: 0, y: 0}
 --- !u!21 &581202604
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: COLORRAMP_ON ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords:
+  - COLORRAMP_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -7039,6 +7269,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -7160,9 +7391,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -7222,17 +7456,87 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!850595691 &596350907
+LightingSettings:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Settings.lighting
+  serializedVersion: 4
+  m_GIWorkflowMode: 1
+  m_EnableBakedLightmaps: 0
+  m_EnableRealtimeLightmaps: 0
+  m_RealtimeEnvironmentLighting: 1
+  m_BounceScale: 1
+  m_AlbedoBoost: 1
+  m_IndirectOutputScale: 1
+  m_UsingShadowmask: 1
+  m_BakeBackend: 1
+  m_LightmapMaxSize: 1024
+  m_BakeResolution: 40
+  m_Padding: 2
+  m_LightmapCompression: 3
+  m_AO: 0
+  m_AOMaxDistance: 1
+  m_CompAOExponent: 1
+  m_CompAOExponentDirect: 0
+  m_ExtractAO: 0
+  m_MixedBakeMode: 2
+  m_LightmapsBakeMode: 1
+  m_FilterMode: 1
+  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
+  m_ExportTrainingData: 0
+  m_TrainingDataDestination: TrainingData
+  m_RealtimeResolution: 2
+  m_ForceWhiteAlbedo: 0
+  m_ForceUpdates: 0
+  m_FinalGather: 0
+  m_FinalGatherRayCount: 256
+  m_FinalGatherFiltering: 1
+  m_PVRCulling: 1
+  m_PVRSampling: 1
+  m_PVRDirectSampleCount: 32
+  m_PVRSampleCount: 512
+  m_PVREnvironmentSampleCount: 512
+  m_PVREnvironmentReferencePointCount: 2048
+  m_LightProbeSampleCountMultiplier: 4
+  m_PVRBounces: 2
+  m_PVRMinBounces: 2
+  m_PVREnvironmentMIS: 0
+  m_PVRFilteringMode: 2
+  m_PVRDenoiserTypeDirect: 0
+  m_PVRDenoiserTypeIndirect: 0
+  m_PVRDenoiserTypeAO: 0
+  m_PVRFilterTypeDirect: 0
+  m_PVRFilterTypeIndirect: 0
+  m_PVRFilterTypeAO: 0
+  m_PVRFilteringGaussRadiusDirect: 1
+  m_PVRFilteringGaussRadiusIndirect: 5
+  m_PVRFilteringGaussRadiusAO: 2
+  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+  m_PVRFilteringAtrousPositionSigmaIndirect: 2
+  m_PVRFilteringAtrousPositionSigmaAO: 1
+  m_PVRTiledBaking: 0
 --- !u!21 &611714447
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CLIPPING_ON COLORRAMP_ON ETC1_EXTERNAL_ALPHA OFFSETUV_ON OUTBASE8DIR_ON
-    OUTBASE_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - CLIPPING_ON
+  - COLORRAMP_ON
+  - OFFSETUV_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -7290,6 +7594,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -7476,17 +7781,26 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &639189023
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA FADE_ON GLOWTEX_ON HITEFFECT_ON OUTBASE8DIR_ON
-    OUTBASE_ON _GLOWTEXUSED_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - FADE_ON
+  - GLOWTEX_ON
+  - HITEFFECT_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GLOWTEXUSED_ON
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -7544,6 +7858,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -7730,16 +8045,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &653496752
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA MOTIONBLUR_ON
+  m_ValidKeywords:
+  - MOTIONBLUR_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -7797,6 +8116,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -7982,16 +8302,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &665239746
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GREYSCALE_ON
+  m_ValidKeywords:
+  - GREYSCALE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -8049,6 +8373,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -8170,9 +8495,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -8232,16 +8560,21 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &727703726
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: BLUR_ON ETC1_EXTERNAL_ALPHA TEXTURESCROLL_ON
+  m_ValidKeywords:
+  - BLUR_ON
+  - TEXTURESCROLL_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -8299,6 +8632,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -8420,9 +8754,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -8482,6 +8819,7 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &732186308
 GameObject:
   m_ObjectHideFlags: 0
@@ -8530,6 +8868,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2036092933}
   - {fileID: 1351315063}
@@ -8539,17 +8878,36 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &753155718
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CLIPPING_ON COLORSWAP_ON DISTORT_ON ETC1_EXTERNAL_ALPHA GLOWTEX_ON
-    GLOW_ON GREYSCALEOUTLINE_ON OUTBASE8DIR_ON OUTBASE_ON OUTDIST_ON OUTGREYTEXTURE_ON
-    OUTTEX_ON PINCH_ON ROUNDWAVEUV_ON ZOOMUV_ON _GLOWTEXUSED_ON _GREYSCALEOUTLINE_ON
-    _OUTLINE8DIRECTIONS_ON _OUTLINEDISTORTTOGGLE_ON _OUTLINETEXGREY_ON _OUTLINETEXTOGGLE_ON
+  m_ValidKeywords:
+  - CLIPPING_ON
+  - COLORSWAP_ON
+  - DISTORT_ON
+  - GLOWTEX_ON
+  - GLOW_ON
+  - GREYSCALEOUTLINE_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - OUTDIST_ON
+  - OUTTEX_ON
+  - PINCH_ON
+  - ROUNDWAVEUV_ON
+  - ZOOMUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - OUTGREYTEXTURE_ON
+  - _GLOWTEXUSED_ON
+  - _GREYSCALEOUTLINE_ON
+  - _OUTLINE8DIRECTIONS_ON
+  - _OUTLINEDISTORTTOGGLE_ON
+  - _OUTLINETEXGREY_ON
+  - _OUTLINETEXTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -8607,6 +8965,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 0.65
     - _AlphaCutoffValue: 0.25
@@ -8722,9 +9081,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -8784,16 +9146,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &772177650
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA FADE_ON
+  m_ValidKeywords:
+  - FADE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -8851,6 +9217,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -9037,16 +9404,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &817315606
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA NEGATIVE_ON
+  m_ValidKeywords:
+  - NEGATIVE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -9104,6 +9475,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -9225,9 +9597,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -9287,16 +9662,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &822200767
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA FLICKER_ON
+  m_ValidKeywords:
+  - FLICKER_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -9354,6 +9733,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -9475,9 +9855,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -9537,18 +9920,30 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &883004836
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: COLORSWAP_ON ETC1_EXTERNAL_ALPHA GLOWTEX_ON GLOW_ON OUTBASE8DIR_ON
-    OUTBASE_ON OUTDIST_ON OUTTEX_ON _GLOWTEXUSED_ON _OUTLINE8DIRECTIONS_ON _OUTLINEDISTORTTOGGLE_ON
-    _OUTLINETEXTOGGLE_ON
+  m_ValidKeywords:
+  - COLORSWAP_ON
+  - GLOWTEX_ON
+  - GLOW_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - OUTDIST_ON
+  - OUTTEX_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GLOWTEXUSED_ON
+  - _OUTLINE8DIRECTIONS_ON
+  - _OUTLINEDISTORTTOGGLE_ON
+  - _OUTLINETEXTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -9606,6 +10001,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -9727,9 +10123,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -9789,17 +10188,26 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &916295327
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CHROMABERR_ON ETC1_EXTERNAL_ALPHA FISHEYE_ON HITEFFECT_ON OUTBASE8DIR_ON
-    OUTBASE_ON PINCH_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - CHROMABERR_ON
+  - FISHEYE_ON
+  - HITEFFECT_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - PINCH_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -9857,6 +10265,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -10043,16 +10452,22 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &946451345
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: COLORRAMP_ON ETC1_EXTERNAL_ALPHA FISHEYE_ON INNEROUTLINE_ON
+  m_ValidKeywords:
+  - COLORRAMP_ON
+  - FISHEYE_ON
+  - INNEROUTLINE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -10110,6 +10525,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -10290,16 +10706,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &950928387
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA HITEFFECT_ON
+  m_ValidKeywords:
+  - HITEFFECT_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -10357,6 +10777,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -10543,16 +10964,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &984421900
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA ZOOMUV_ON
+  m_ValidKeywords:
+  - ZOOMUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -10610,6 +11035,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -10796,16 +11222,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &999359662
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA SHAKEUV_ON
+  m_ValidKeywords:
+  - SHAKEUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -10863,6 +11293,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -10984,9 +11415,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -11046,6 +11480,7 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &999529076
 GameObject:
   m_ObjectHideFlags: 0
@@ -11093,11 +11528,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: c12f806a2a3ae954ebb1771c65441e4c, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!20 &999529079
 Camera:
   m_ObjectHideFlags: 0
@@ -11151,6 +11581,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -11167,54 +11598,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 999529080}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 16
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!1 &1005972826
 GameObject:
   m_ObjectHideFlags: 0
@@ -11243,6 +11626,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 535274222}
   m_RootOrder: 0
@@ -11267,6 +11651,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11295,14 +11680,18 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 --- !u!21 &1024727761
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GLOW_ON GRADIENT_ON
+  m_ValidKeywords:
+  - GLOW_ON
+  - GRADIENT_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -11360,6 +11749,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -11481,9 +11871,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -11543,16 +11936,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1041891245
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA TWISTUV_ON
+  m_ValidKeywords:
+  - TWISTUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -11610,6 +12007,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -11796,17 +12194,27 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1045875747
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: COLORSWAP_ON ETC1_EXTERNAL_ALPHA GLOWTEX_ON INNEROUTLINE_ON OUTBASE8DIR_ON
-    OUTBASE_ON WAVEUV_ON _GLOWTEXUSED_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - COLORSWAP_ON
+  - GLOWTEX_ON
+  - INNEROUTLINE_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - WAVEUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GLOWTEXUSED_ON
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -11864,6 +12272,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -11979,9 +12388,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -12041,16 +12453,23 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1065071623
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: BLUR_ON COLORRAMP_ON ETC1_EXTERNAL_ALPHA GLOW_ON NEGATIVE_ON
+  m_ValidKeywords:
+  - BLUR_ON
+  - COLORRAMP_ON
+  - GLOW_ON
+  - NEGATIVE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -12108,6 +12527,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -12228,9 +12648,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -12290,17 +12713,26 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1078024312
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA INNEROUTLINE_ON ONLYINNEROUTLINE_ON OUTBASE8DIR_ON
-    OUTBASE_ON SHADOW_ON _ONLYINNEROUTLINE_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - INNEROUTLINE_ON
+  - ONLYINNEROUTLINE_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - SHADOW_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _ONLYINNEROUTLINE_ON
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -12358,6 +12790,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -12473,9 +12906,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -12535,16 +12971,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1105303541
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA SHADOW_ON
+  m_ValidKeywords:
+  - SHADOW_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -12602,6 +13042,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -12723,9 +13164,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -12785,16 +13229,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1118634257
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA RADIALCLIPPING_ON
+  m_ValidKeywords:
+  - RADIALCLIPPING_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -12852,6 +13300,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -13025,17 +13474,26 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1129192189
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA OUTBASE8DIR_ON OUTBASE_ON OUTDIST_ON OUTTEX_ON
-    _OUTLINE8DIRECTIONS_ON _OUTLINEDISTORTTOGGLE_ON _OUTLINETEXTOGGLE_ON
+  m_ValidKeywords:
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - OUTDIST_ON
+  - OUTTEX_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
+  - _OUTLINEDISTORTTOGGLE_ON
+  - _OUTLINETEXTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -13093,6 +13551,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -13279,16 +13738,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1150284212
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA FISHEYE_ON
+  m_ValidKeywords:
+  - FISHEYE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -13346,6 +13809,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -13467,9 +13931,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -13529,16 +13996,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1166912798
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CHANGECOLOR_ON ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords:
+  - CHANGECOLOR_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -13596,6 +14067,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -13716,9 +14188,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -13778,16 +14253,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1181865632
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GLITCH_ON
+  m_ValidKeywords:
+  - GLITCH_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -13845,6 +14324,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -13966,9 +14446,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -14028,17 +14511,26 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1195370958
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: DISTORT_ON ETC1_EXTERNAL_ALPHA GLOW_ON GREYSCALE_ON POLARUV_ON
-    POSTERIZE_ON TEXTURESCROLL_ON WAVEUV_ON
+  m_ValidKeywords:
+  - DISTORT_ON
+  - GLOW_ON
+  - GREYSCALE_ON
+  - POLARUV_ON
+  - POSTERIZE_ON
+  - TEXTURESCROLL_ON
+  - WAVEUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -14096,6 +14588,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -14217,9 +14710,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 9.9
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -14279,17 +14775,26 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1201459352
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: BLUR_ON CLIPPING_ON CUSTOMBLENDING_ON DISTORT_ON ETC1_EXTERNAL_ALPHA
-    GLOW_ON WAVEUV_ON WIND_ON
+  m_ValidKeywords:
+  - BLUR_ON
+  - CLIPPING_ON
+  - DISTORT_ON
+  - GLOW_ON
+  - WAVEUV_ON
+  - WIND_ON
+  m_InvalidKeywords:
+  - CUSTOMBLENDING_ON
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -14347,6 +14852,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -14462,9 +14968,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -14524,16 +15033,22 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1213636577
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA OUTBASE8DIR_ON ROUNDWAVEUV_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - OUTBASE8DIR_ON
+  - ROUNDWAVEUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -14591,6 +15106,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -14712,9 +15228,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -14774,16 +15293,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1230234141
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA TEXTURESCROLL_ON
+  m_ValidKeywords:
+  - TEXTURESCROLL_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -14841,6 +15364,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -15027,16 +15551,19 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1257475202
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -15094,6 +15621,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -15280,17 +15808,27 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1283967498
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GLOW_ON GRADIENT_ON HSV_ON OUTBASE8DIR_ON
-    OUTBASE_ON SHADOW_ON SHINE_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - GLOW_ON
+  - GRADIENT_ON
+  - HSV_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - SHADOW_ON
+  - SHINE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -15348,6 +15886,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -15533,6 +16072,7 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1302433541
 GameObject:
   m_ObjectHideFlags: 0
@@ -15561,6 +16101,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.2053999, y: 1.066779, z: 1.148}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 564363701}
   m_RootOrder: 1
@@ -15585,6 +16126,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15609,14 +16151,19 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 --- !u!21 &1319594099
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GLOWTEX_ON GLOW_ON _GLOWTEXUSED_ON
+  m_ValidKeywords:
+  - GLOWTEX_ON
+  - GLOW_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GLOWTEXUSED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -15674,6 +16221,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -15860,16 +16408,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1333622421
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: DISTORT_ON ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords:
+  - DISTORT_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -15927,6 +16479,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -16048,9 +16601,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -16110,17 +16666,28 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1349909629
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GLOWTEX_ON GLOW_ON GRADIENT_ON OUTBASE8DIR_ON
-    OUTBASE_ON SHADOW_ON TWISTUV_ON _GLOWTEXUSED_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - GLOWTEX_ON
+  - GLOW_ON
+  - GRADIENT_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - SHADOW_ON
+  - TWISTUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GLOWTEXUSED_ON
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -16178,6 +16745,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -16298,9 +16866,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -16360,10 +16931,10 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!114 &1351315062 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2693541945104491668, guid: 20ecb5e692aea084587fb7d91afada32,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 2693541945104491668, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
   m_PrefabInstance: {fileID: 2693541944291363554}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -16374,21 +16945,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!4 &1351315063 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
   m_PrefabInstance: {fileID: 2693541944291363554}
   m_PrefabAsset: {fileID: 0}
 --- !u!21 &1363957141
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CHROMABERR_ON DOODLE_ON ETC1_EXTERNAL_ALPHA FLICKER_ON GLITCH_ON
-    GLOW_ON GREYSCALE_ON HOLOGRAM_ON OUTBASE8DIR_ON OUTBASE_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - CHROMABERR_ON
+  - DOODLE_ON
+  - FLICKER_ON
+  - GLITCH_ON
+  - GLOW_ON
+  - GREYSCALE_ON
+  - HOLOGRAM_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -16446,6 +17027,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -16632,16 +17214,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1377307553
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CHROMABERR_ON ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords:
+  - CHROMABERR_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -16699,6 +17285,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -16820,9 +17407,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -16882,17 +17472,24 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1399293758
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: COLORRAMP_ON ETC1_EXTERNAL_ALPHA OUTBASE8DIR_ON OUTBASE_ON TEXTURESCROLL_ON
-    _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - COLORRAMP_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - TEXTURESCROLL_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -16950,6 +17547,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -17071,9 +17669,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -17133,16 +17734,19 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1435312052
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -17200,6 +17804,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -17318,9 +17923,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -17380,16 +17988,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1439702669
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA HSV_ON
+  m_ValidKeywords:
+  - HSV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -17447,6 +18059,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -17562,9 +18175,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -17624,17 +18240,25 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1459191230
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ATLAS_ON CHANGECOLOR_ON DOODLE_ON ETC1_EXTERNAL_ALPHA OUTBASE8DIR_ON
-    OUTBASE_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - ATLAS_ON
+  - CHANGECOLOR_ON
+  - DOODLE_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -17692,6 +18316,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -17812,9 +18437,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -17874,16 +18502,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1537019967
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GRADIENT_ON
+  m_ValidKeywords:
+  - GRADIENT_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -17941,6 +18573,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -18062,9 +18695,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -18124,10 +18760,10 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!114 &1563905015 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4888605673052504402, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 4888605673052504402, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
   m_PrefabInstance: {fileID: 4888605672032586405}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -18138,21 +18774,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!4 &1563905016 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
   m_PrefabInstance: {fileID: 4888605672032586405}
   m_PrefabAsset: {fileID: 0}
 --- !u!21 &1605957010
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA OFFSETUV_ON OUTBASE8DIR_ON _OUTLINE8DIRECTIONS_ON
-    _OUTLINETEXTOGGLE_ON
+  m_ValidKeywords:
+  - OFFSETUV_ON
+  - OUTBASE8DIR_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
+  - _OUTLINETEXTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -18210,6 +18850,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -18396,16 +19037,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1693197524
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CONTRAST_ON ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords:
+  - CONTRAST_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -18463,6 +19108,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -18578,9 +19224,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -18640,16 +19289,21 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1708657337
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ALPHACUTOFF_ON ETC1_EXTERNAL_ALPHA PIXELATE_ON
+  m_ValidKeywords:
+  - ALPHACUTOFF_ON
+  - PIXELATE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -18707,6 +19361,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.458
@@ -18828,9 +19483,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -18890,6 +19548,7 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1723167442
 GameObject:
   m_ObjectHideFlags: 0
@@ -18920,6 +19579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -18952,20 +19612,23 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &1735095770
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19023,6 +19686,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -19144,9 +19808,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -19206,16 +19873,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1769422912
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA WARP_ON
+  m_ValidKeywords:
+  - WARP_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19273,6 +19944,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -19382,9 +20054,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -19443,17 +20118,25 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1774397170
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: BLUR_ON DISTORT_ON ETC1_EXTERNAL_ALPHA FADE_ON HITEFFECT_ON OUTBASE8DIR_ON
-    _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - BLUR_ON
+  - DISTORT_ON
+  - FADE_ON
+  - HITEFFECT_ON
+  - OUTBASE8DIR_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19511,6 +20194,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -19626,9 +20310,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -19688,16 +20375,19 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1774554235
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: GRADIENT_ON
+  m_ValidKeywords:
+  - GRADIENT_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19755,6 +20445,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -19941,17 +20632,28 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1814697822
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: BLUR_ON COLORRAMP_ON ETC1_EXTERNAL_ALPHA GLOWTEX_ON GLOW_ON HOLOGRAM_ON
-    HSV_ON PINCH_ON ROTATEUV_ON _GLOWTEXUSED_ON
+  m_ValidKeywords:
+  - BLUR_ON
+  - COLORRAMP_ON
+  - GLOWTEX_ON
+  - GLOW_ON
+  - HOLOGRAM_ON
+  - HSV_ON
+  - PINCH_ON
+  - ROTATEUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GLOWTEXUSED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20009,6 +20711,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -20189,16 +20892,22 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1820263336
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CLIPPING_ON ETC1_EXTERNAL_ALPHA WAVEUV_ON WIND_ON
+  m_ValidKeywords:
+  - CLIPPING_ON
+  - WAVEUV_ON
+  - WIND_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20256,6 +20965,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -20377,9 +21087,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -20439,16 +21152,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1863638619
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA PINCH_ON
+  m_ValidKeywords:
+  - PINCH_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20506,6 +21223,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -20627,9 +21345,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -20689,17 +21410,25 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1912112097
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CLIPPING_ON ETC1_EXTERNAL_ALPHA GLOW_ON HSV_ON PINCH_ON ROTATEUV_ON
-    TWISTUV_ON
+  m_ValidKeywords:
+  - CLIPPING_ON
+  - GLOW_ON
+  - HSV_ON
+  - PINCH_ON
+  - ROTATEUV_ON
+  - TWISTUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20757,6 +21486,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -20943,259 +21673,23 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!21 &1936528753
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: AllIn1SpriteShader/AllIn1SpriteShader
-  m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA OVERLAY_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _ColorRampTex:
-        m_Texture: {fileID: 2800000, guid: 279657edc397ece4b8029c727adf6ddc, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ColorRampTexGradient:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ColorSwapTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _DistortTex:
-        m_Texture: {fileID: 2800000, guid: 7aad8c583ef292e48b06af0d1f2fab97, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _FadeBurnTex:
-        m_Texture: {fileID: 2800000, guid: 677cca399782dea41aedc1d292ecb67d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _FadeTex:
-        m_Texture: {fileID: 2800000, guid: 7aad8c583ef292e48b06af0d1f2fab97, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _GlowTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OutlineDistortTex:
-        m_Texture: {fileID: 2800000, guid: 7aad8c583ef292e48b06af0d1f2fab97, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OutlineTex:
-        m_Texture: {fileID: 2800000, guid: 74087f6d03f233e4a8a142fa01f9e5cf, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OverlayTex:
-        m_Texture: {fileID: 2800000, guid: 677cca399782dea41aedc1d292ecb67d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ShineMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _Alpha: 1
-    - _AlphaCutoffValue: 0.25
-    - _AlphaOutlineBlend: 1
-    - _AlphaOutlineGlow: 5
-    - _AlphaOutlineMinAlpha: 0
-    - _AlphaOutlinePower: 1
-    - _AlphaRoundThreshold: 0.5
-    - _BillboardY: 0
-    - _BlurHD: 0
-    - _BlurIntensity: 10
-    - _Brightness: 0
-    - _ChromAberrAlpha: 0.4
-    - _ChromAberrAmount: 1
-    - _ClipUvDown: 0
-    - _ClipUvLeft: 0
-    - _ClipUvRight: 0
-    - _ClipUvUp: 0
-    - _ColorChangeLuminosity: 0
-    - _ColorChangeTolerance: 0.25
-    - _ColorChangeTolerance2: 0.25
-    - _ColorChangeTolerance3: 0.25
-    - _ColorRampBlend: 1
-    - _ColorRampLuminosity: 0
-    - _ColorRampOutline: 0
-    - _ColorSwapBlend: 1
-    - _ColorSwapBlueLuminosity: 0.5
-    - _ColorSwapGreenLuminosity: 0.5
-    - _ColorSwapRedLuminosity: 0.5
-    - _Contrast: 1
-    - _CullingOption: 0
-    - _DistortAmount: 0.5
-    - _DistortTexXSpeed: 5
-    - _DistortTexYSpeed: 5
-    - _EditorDrawers: 6
-    - _FadeAmount: -0.1
-    - _FadeBurnGlow: 2
-    - _FadeBurnTransition: 0.075
-    - _FadeBurnWidth: 0.025
-    - _FishEyeUvAmount: 0.35
-    - _FlickerAlpha: 0
-    - _FlickerFreq: 0.2
-    - _FlickerPercent: 0.05
-    - _GhostBlend: 1
-    - _GhostColorBoost: 1
-    - _GhostTransparency: 0
-    - _GlitchAmount: 3
-    - _GlitchSize: 1
-    - _Glow: 10
-    - _GlowGlobal: 1
-    - _GlowTexUsed: 0
-    - _GradBlend: 1
-    - _GradBoostX: 1.2
-    - _GradBoostY: 1.2
-    - _GradIsRadial: 0
-    - _GrassManualAnim: 1
-    - _GrassManualToggle: 0
-    - _GrassRadialBend: 0.1
-    - _GrassSpeed: 2
-    - _GrassWind: 20
-    - _GreyscaleBlend: 1
-    - _GreyscaleLuminosity: 0
-    - _GreyscaleOutline: 0
-    - _HandDrawnAmount: 10
-    - _HandDrawnSpeed: 5
-    - _HitEffectBlend: 1
-    - _HitEffectGlow: 5
-    - _HologramBlend: 1
-    - _HologramMaxAlpha: 0.75
-    - _HologramMinAlpha: 0.1
-    - _HologramStripesAmount: 0.1
-    - _HologramStripesSpeed: 4.5
-    - _HologramUnmodAmount: 0
-    - _HsvBright: 1
-    - _HsvSaturation: 1
-    - _HsvShift: 180
-    - _InnerOutlineAlpha: 1
-    - _InnerOutlineGlow: 4
-    - _InnerOutlineThickness: 1
-    - _MaxXUV: 1
-    - _MaxYUV: 1
-    - _MinXUV: 0
-    - _MinYUV: 0
-    - _MotionBlurAngle: 0.1
-    - _MotionBlurDist: 1.25
-    - _MyDstMode: 10
-    - _MySrcMode: 5
-    - _NegativeAmount: 1
-    - _OffsetUvX: 0
-    - _OffsetUvY: 0
-    - _OnlyInnerOutline: 0
-    - _OnlyOutline: 0
-    - _Outline8Directions: 0
-    - _OutlineAlpha: 1
-    - _OutlineDistortAmount: 0.5
-    - _OutlineDistortTexXSpeed: 5
-    - _OutlineDistortTexYSpeed: 5
-    - _OutlineDistortToggle: 0
-    - _OutlineGlow: 1.5
-    - _OutlineIsPixel: 0
-    - _OutlinePixelWidth: 1
-    - _OutlineTexGrey: 0
-    - _OutlineTexToggle: 0
-    - _OutlineTexXSpeed: 10
-    - _OutlineTexYSpeed: 0
-    - _OutlineWidth: 0.004
-    - _OverlayBlend: 0.413
-    - _OverlayGlow: 1.8
-    - _OverlayTextureScrollXSpeed: 0.25
-    - _OverlayTextureScrollYSpeed: 0.25
-    - _PinchUvAmount: 0.35
-    - _PixelateSize: 32
-    - _PosterizeGamma: 0.75
-    - _PosterizeNumColors: 8
-    - _PosterizeOutline: 0
-    - _RadialClipAngle: 90
-    - _RadialClipArc1: 45
-    - _RadialClipArc2: 0
-    - _RandomSeed: 0
-    - _RectSize: 1
-    - _RotateUvAmount: 0
-    - _RoundWaveSpeed: 2
-    - _RoundWaveStrength: 0.7
-    - _ShadowAlpha: 0.5
-    - _ShadowX: 0.1
-    - _ShadowY: -0.05
-    - _ShakeUvSpeed: 2.5
-    - _ShakeUvX: 1.5
-    - _ShakeUvY: 1
-    - _ShineGlow: 1
-    - _ShineLocation: 0.5
-    - _ShineRotate: 0
-    - _ShineWidth: 0.1
-    - _TextureScrollXSpeed: 1
-    - _TextureScrollYSpeed: 0
-    - _TwistUvAmount: 1
-    - _TwistUvPosX: 0.5
-    - _TwistUvPosY: 0.5
-    - _TwistUvRadius: 0.75
-    - _WarpScale: 0.5
-    - _WarpSpeed: 8
-    - _WarpStrength: 0.025
-    - _WaveAmount: 7
-    - _WaveSpeed: 10
-    - _WaveStrength: 7.5
-    - _WaveX: 0
-    - _WaveY: 0.5
-    - _ZTestMode: 4
-    - _ZWrite: 0
-    - _ZoomUvAmount: 0.5
-    m_Colors:
-    - _AlphaOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorChangeNewCol: {r: 1, g: 1, b: 0, a: 1}
-    - _ColorChangeNewCol2: {r: 1, g: 1, b: 0, a: 1}
-    - _ColorChangeNewCol3: {r: 1, g: 1, b: 0, a: 1}
-    - _ColorChangeTarget: {r: 1, g: 0, b: 0, a: 1}
-    - _ColorChangeTarget2: {r: 1, g: 0, b: 0, a: 1}
-    - _ColorChangeTarget3: {r: 1, g: 0, b: 0, a: 1}
-    - _ColorSwapBlue: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorSwapGreen: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorSwapRed: {r: 1, g: 1, b: 1, a: 1}
-    - _FadeBurnColor: {r: 1, g: 1, b: 0, a: 1}
-    - _GlowColor: {r: 1, g: 1, b: 1, a: 1}
-    - _GradBotLeftCol: {r: 0, g: 0, b: 1, a: 1}
-    - _GradBotRightCol: {r: 0, g: 0, b: 1, a: 1}
-    - _GradTopLeftCol: {r: 1, g: 0, b: 0, a: 1}
-    - _GradTopRightCol: {r: 1, g: 0, b: 0, a: 1}
-    - _GreyscaleTintColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HitEffectColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HologramStripeColor: {r: 0, g: 1, b: 1, a: 1}
-    - _InnerOutlineColor: {r: 1, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1956560312
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GLOW_ON GRADIENT_ON RADIALGRADIENT_ON _GRADISRADIAL_ON
+  m_ValidKeywords:
+  - GLOW_ON
+  - GRADIENT_ON
+  - RADIALGRADIENT_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GRADISRADIAL_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21253,6 +21747,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 0.741
     - _AlphaCutoffValue: 0.25
@@ -21433,16 +21928,22 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &1984207367
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA OUTBASE8DIR_ON WAVEUV_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - OUTBASE8DIR_ON
+  - WAVEUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21500,6 +22001,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -21621,9 +22123,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -21683,16 +22188,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2007448611
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA HSV_ON
+  m_ValidKeywords:
+  - HSV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21750,6 +22259,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -21868,9 +22378,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -21930,16 +22443,23 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2023436102
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: COLORSWAP_ON ETC1_EXTERNAL_ALPHA GLOWTEX_ON GLOW_ON _GLOWTEXUSED_ON
+  m_ValidKeywords:
+  - COLORSWAP_ON
+  - GLOWTEX_ON
+  - GLOW_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _GLOWTEXUSED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -21997,6 +22517,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -22112,9 +22633,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -22174,16 +22698,15 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!4 &2036092933 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
   m_PrefabInstance: {fileID: 6606520844429542823}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2036092934 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6606520846422087073, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 6606520846422087073, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
   m_PrefabInstance: {fileID: 6606520844429542823}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -22194,15 +22717,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!21 &2054684528
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GLOW_ON HSV_ON OUTBASE8DIR_ON OUTBASE_ON
-    OUTTEX_ON POLARUV_ON TEXTURESCROLL_ON _OUTLINE8DIRECTIONS_ON _OUTLINETEXTOGGLE_ON
+  m_ValidKeywords:
+  - GLOW_ON
+  - HSV_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  - OUTTEX_ON
+  - POLARUV_ON
+  - TEXTURESCROLL_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
+  - _OUTLINETEXTOGGLE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -22260,6 +22793,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -22446,16 +22980,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2061184730
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA HSV_ON
+  m_ValidKeywords:
+  - HSV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -22513,6 +23051,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -22634,9 +23173,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -22696,16 +23238,23 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2066467196
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: COLORSWAP_ON ETC1_EXTERNAL_ALPHA OUTBASE8DIR_ON OUTBASE_ON _OUTLINE8DIRECTIONS_ON
+  m_ValidKeywords:
+  - COLORSWAP_ON
+  - OUTBASE8DIR_ON
+  - OUTBASE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  - _OUTLINE8DIRECTIONS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -22763,6 +23312,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -22884,9 +23434,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -22946,16 +23499,21 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2067098021
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: CLIPPING_ON ETC1_EXTERNAL_ALPHA GRADIENT_ON
+  m_ValidKeywords:
+  - CLIPPING_ON
+  - GRADIENT_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -23013,6 +23571,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -23199,16 +23758,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2076240280
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ALPHAOUTLINE_ON ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords:
+  - ALPHAOUTLINE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -23266,6 +23829,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -23445,16 +24009,23 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2105693144
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: DISTORT_ON ETC1_EXTERNAL_ALPHA HSV_ON TEXTURESCROLL_ON WAVEUV_ON
+  m_ValidKeywords:
+  - DISTORT_ON
+  - HSV_ON
+  - TEXTURESCROLL_ON
+  - WAVEUV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -23512,6 +24083,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -23632,9 +24204,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -23694,16 +24269,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2128149943
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA HSV_ON
+  m_ValidKeywords:
+  - HSV_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -23761,6 +24340,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -23879,9 +24459,12 @@ Material:
     - _PosterizeGamma: 0.75
     - _PosterizeNumColors: 8
     - _PosterizeOutline: 0
+    - _RadialClip: 45
+    - _RadialClip2: 0
     - _RadialClipAngle: 90
     - _RadialClipArc1: 45
     - _RadialClipArc2: 0
+    - _RadialStartAngle: 90
     - _RandomSeed: 0
     - _RectSize: 1
     - _RotateUvAmount: 0
@@ -23941,16 +24524,20 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!21 &2136425119
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AllIn1SpriteShader/AllIn1SpriteShader
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA SHINE_ON
+  m_ValidKeywords:
+  - SHINE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -24008,6 +24595,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 2.15, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
@@ -24191,6 +24779,7 @@ Material:
     - _OverlayColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &2693541944291363554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24198,153 +24787,123 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 732186310}
     m_Modifications:
-    - target: {fileID: 2693541943927465612, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541943927465612, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1230234141}
-    - target: {fileID: 2693541944081196060, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541944081196060, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 183278329}
-    - target: {fileID: 2693541944314560084, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541944314560084, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1735095770}
-    - target: {fileID: 2693541944422538500, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541944422538500, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1333622421}
-    - target: {fileID: 2693541944533378254, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541944533378254, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 323921624}
-    - target: {fileID: 2693541944809587528, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541944809587528, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1150284212}
-    - target: {fileID: 2693541944828766843, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541944828766843, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1118634257}
-    - target: {fileID: 2693541945039396782, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945039396782, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1984207367}
-    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_LocalPosition.y
       value: -15
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491669, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945104491671, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945104491671, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Name
       value: 2.UV Effefcts
       objectReference: {fileID: 0}
-    - target: {fileID: 2693541945110415961, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945110415961, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1769422912}
-    - target: {fileID: 2693541945215881450, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945215881450, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 999359662}
-    - target: {fileID: 2693541945319032189, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945319032189, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 87388692}
-    - target: {fileID: 2693541945399412658, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945399412658, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1863638619}
-    - target: {fileID: 2693541945408324704, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945408324704, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1041891245}
-    - target: {fileID: 2693541945565126696, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945565126696, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 139334897}
-    - target: {fileID: 2693541945619379548, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945619379548, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1605957010}
-    - target: {fileID: 2693541945739909392, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945739909392, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 984421900}
-    - target: {fileID: 2693541945801677709, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945801677709, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 469847421}
-    - target: {fileID: 2693541945979729294, guid: 20ecb5e692aea084587fb7d91afada32,
-        type: 3}
+    - target: {fileID: 2693541945979729294, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1213636577}
@@ -24352,8 +24911,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 20ecb5e692aea084587fb7d91afada32, type: 3}
 --- !u!4 &4825911116503289154 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 1825654550106097893, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 1825654550106097893, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
   m_PrefabInstance: {fileID: 6606520844429542823}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4888605672032586405
@@ -24363,278 +24921,223 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 732186310}
     m_Modifications:
-    - target: {fileID: 1246059015865814304, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 1246059015865814304, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1814697822}
-    - target: {fileID: 4888605671252757400, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671252757400, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1774397170}
-    - target: {fileID: 4888605671403983958, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671403983958, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2023436102}
-    - target: {fileID: 4888605671429839251, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671429839251, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1820263336}
-    - target: {fileID: 4888605671447218607, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671447218607, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 916295327}
-    - target: {fileID: 4888605671492589599, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671492589599, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1537019967}
-    - target: {fileID: 4888605671532279124, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671532279124, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1065071623}
-    - target: {fileID: 4888605671636628454, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671636628454, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 327735240}
-    - target: {fileID: 4888605671640066588, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671640066588, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 217718272}
-    - target: {fileID: 4888605671720662137, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671720662137, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 946451345}
-    - target: {fileID: 4888605671724070871, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671724070871, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2128149943}
-    - target: {fileID: 4888605671754829371, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671754829371, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 208665463}
-    - target: {fileID: 4888605671762862845, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671762862845, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1024727761}
-    - target: {fileID: 4888605671807016344, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671807016344, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 212554433}
-    - target: {fileID: 4888605671842625537, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671842625537, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1349909629}
-    - target: {fileID: 4888605671847025731, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671847025731, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2054684528}
-    - target: {fileID: 4888605671893903953, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671893903953, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1459191230}
-    - target: {fileID: 4888605671935400281, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671935400281, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2066467196}
-    - target: {fileID: 4888605671986299874, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605671986299874, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1439702669}
-    - target: {fileID: 4888605672074421360, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672074421360, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 753155718}
-    - target: {fileID: 4888605672283940418, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672283940418, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 288262069}
-    - target: {fileID: 4888605672287632355, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672287632355, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1956560312}
-    - target: {fileID: 4888605672331852798, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672331852798, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 430987701}
-    - target: {fileID: 4888605672345988030, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672345988030, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 639189023}
-    - target: {fileID: 4888605672447165186, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672447165186, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 727703726}
-    - target: {fileID: 4888605672454641926, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672454641926, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1363957141}
-    - target: {fileID: 4888605672503875346, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672503875346, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1283967498}
-    - target: {fileID: 4888605672550108242, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672550108242, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 453643567}
-    - target: {fileID: 4888605672621803525, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672621803525, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1399293758}
-    - target: {fileID: 4888605672625238144, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672625238144, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2105693144}
-    - target: {fileID: 4888605672710158332, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672710158332, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1195370958}
-    - target: {fileID: 4888605672753325709, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672753325709, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1201459352}
-    - target: {fileID: 4888605672825073922, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672825073922, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 195375977}
-    - target: {fileID: 4888605672831150899, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672831150899, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 883004836}
-    - target: {fileID: 4888605672855470130, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672855470130, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1078024312}
-    - target: {fileID: 4888605672895430053, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672895430053, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 73084414}
-    - target: {fileID: 4888605672971440419, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672971440419, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1435312052}
-    - target: {fileID: 4888605672991708707, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605672991708707, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1912112097}
-    - target: {fileID: 4888605673012176791, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673012176791, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2007448611}
-    - target: {fileID: 4888605673021243031, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673021243031, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1045875747}
-    - target: {fileID: 4888605673052504403, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504403, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Name
       value: 3.Effect Combinations
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_LocalPosition.y
       value: -30
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673052504413, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888605673134826670, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673134826670, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 611714447}
-    - target: {fileID: 4888605673144341410, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 4888605673144341410, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2067098021}
-    - target: {fileID: 8377365562271174423, guid: efd124be5d07fc44f9da5e6a23e97f6a,
-        type: 3}
+    - target: {fileID: 8377365562271174423, guid: efd124be5d07fc44f9da5e6a23e97f6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 540543599}
@@ -24647,220 +25150,203 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 732186310}
     m_Modifications:
-    - target: {fileID: 6606520844443103167, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520844443103153, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606520844443103167, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1257475202}
-    - target: {fileID: 6606520844616943701, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520844616943701, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 150333392}
-    - target: {fileID: 6606520844677925848, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520844677925848, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 7746739}
-    - target: {fileID: 6606520844737655238, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520844737655238, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2076240280}
-    - target: {fileID: 6606520844765593057, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520844765593057, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 537809413}
-    - target: {fileID: 6606520844767765085, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520844767765085, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1181865632}
-    - target: {fileID: 6606520844814802664, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520844814802664, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1105303541}
-    - target: {fileID: 6606520844834332890, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520844834332890, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 313393139}
-    - target: {fileID: 6606520844971831991, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520844971831976, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606520844971831977, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606520844971831980, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606520844971831991, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2136425119}
-    - target: {fileID: 6606520845001106430, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845001106430, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 665239746}
-    - target: {fileID: 6606520845041754498, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845041754498, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 950928387}
-    - target: {fileID: 6606520845100624393, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845100624393, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 653496752}
-    - target: {fileID: 6606520845280340174, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845280340174, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1708657337}
-    - target: {fileID: 6606520845321016424, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845321016424, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1693197524}
-    - target: {fileID: 6606520845363936184, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845363936184, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 302907434}
-    - target: {fileID: 6606520845408393993, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845408393993, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 111852238}
-    - target: {fileID: 6606520845503057826, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845503057826, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1129192189}
-    - target: {fileID: 6606520845539279549, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845539279549, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1936528753}
-    - target: {fileID: 6606520845540876342, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+      objectReference: {fileID: 2100000, guid: cb3f917814074eb41b4623a5b8a39647, type: 2}
+    - target: {fileID: 6606520845540876342, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1319594099}
-    - target: {fileID: 6606520845577655418, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845577655418, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 72928926}
-    - target: {fileID: 6606520845599452448, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845599452448, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1166912798}
-    - target: {fileID: 6606520845616441355, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845616441355, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2061184730}
-    - target: {fileID: 6606520845696089765, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845696089765, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 817315606}
-    - target: {fileID: 6606520845733086080, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845733086080, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 822200767}
-    - target: {fileID: 6606520845982065179, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520845982065179, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 70619476}
-    - target: {fileID: 6606520846011854432, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846011854432, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 465147594}
-    - target: {fileID: 6606520846037099135, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846037099135, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 772177650}
-    - target: {fileID: 6606520846107456485, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846107456485, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1377307553}
-    - target: {fileID: 6606520846153934517, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846153934517, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 85408337}
-    - target: {fileID: 6606520846282589731, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846282589731, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 581202604}
-    - target: {fileID: 6606520846325558118, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846325558118, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 108846146}
-    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087073, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087074, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6606520846422087075, guid: 06c699502c4f4b84db02b4ad4ac0887c,
-        type: 3}
+    - target: {fileID: 6606520846422087075, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
       propertyPath: m_Name
       value: 1.Color Effects
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6606520846422087075, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6606520845539279551, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
+    - {fileID: 6606520845539279550, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 06c699502c4f4b84db02b4ad4ac0887c, type: 3}

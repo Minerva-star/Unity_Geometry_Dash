@@ -37,6 +37,9 @@ public class GameManager : MonoBehaviour
 
     private float highScore = 0f;
 
+    [Header("尝试次数")]
+    public AttemptCounter attemptCounter;
+
 
     private void Start()
     {
@@ -44,6 +47,7 @@ public class GameManager : MonoBehaviour
         LoadHighScore();
         InitializeGame();
         SetupUI();
+        SetupAttemptCounter();
     }
 
     private void LoadHighScore()
@@ -62,15 +66,17 @@ public class GameManager : MonoBehaviour
 
     private void InitializeGame()
     {
+        Debug.Log("InitializeGame() 被调用");
         currentState = GameState.Playing;
         currentProgress = 0f;
         background.SetPaused(false);
         player.OnPlayerDeath += OnPlayerDeath;
         gameOverUI.SetActive(false);
 
+        // 确保UI显示正确
         if (uiManager != null)
-        {  uiManager.SetPauseButtonVisible(true);
-         uiManager.SetCurrentProgressVisible(true);    
+        {  
+            uiManager.ForceShowMainGameUI(); // 强制显示主游戏界面
         }
         
         GameObject[] loseParticles = GameObject.FindGameObjectsWithTag("LoseParticle");
@@ -78,9 +84,6 @@ public class GameManager : MonoBehaviour
         {
             Destroy(particle);
         }
-
-
-
     }
 
     private void SetupUI()
@@ -92,6 +95,35 @@ public class GameManager : MonoBehaviour
         if (gameOverUI != null) gameOverUI.SetActive(false);
 
 
+    }
+
+    private void SetupAttemptCounter()
+    {
+        // 查找或创建尝试次数管理器
+        if (attemptCounter == null)
+        {
+            attemptCounter = FindObjectOfType<AttemptCounter>();
+            if (attemptCounter == null)
+            {
+                GameObject attemptCounterObj = new GameObject("AttemptCounter");
+                attemptCounter = attemptCounterObj.AddComponent<AttemptCounter>();
+            }
+        }
+        
+        // 订阅尝试次数改变事件
+        if (attemptCounter != null)
+        {
+            attemptCounter.OnAttemptCountChanged += OnAttemptCountChanged;
+        }
+    }
+
+    private void OnAttemptCountChanged(int newAttemptCount)
+    {
+        // 更新UI显示
+        if (uiManager != null)
+        {
+            uiManager.UpdateAttemptCount(newAttemptCount);
+        }
     }
 
 
@@ -135,6 +167,8 @@ public class GameManager : MonoBehaviour
         gameOverUI.SetActive(true);
         if (background != null)
             background.SetPaused(true); // 暂停背景
+
+        // 移除尝试次数增加代码，现在由PlayerBehavior处理
 
         //最高记录
         if (currentProgress > highScore)
@@ -204,20 +238,20 @@ public class GameManager : MonoBehaviour
         }
         SetMusicPause(false); // 恢复音乐播放
         
-        if (pausePanel != null)
-        {
-            pausePanel.SetActive(false);
-        }
+        // 确保显示主游戏界面
         if (uiManager != null)
-            uiManager.SetPauseButtonVisible(true); // 显示暂停按钮
+        {
+            uiManager.ForceShowMainGameUI();
+        }
     }
 
 
 
     public void RestartGame()
     {
+        Debug.Log("RestartGame() 被调用");
         Time.timeScale = 1f;
-        player.Reset();
+        player.Reset(); // 这里会重置hasStartedAttempt标志
         if (background != null)
             background.ResetBackground(); 
         // 重新播放音乐
@@ -232,7 +266,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        InitializeGame();
+        InitializeGame(); // 这里会调用ForceShowMainGameUI
 
     }
 
@@ -277,6 +311,33 @@ public class GameManager : MonoBehaviour
         return finishLine.position.x - player.transform.position.x;
     }
 
+    // 获取尝试次数信息
+    public string GetAttemptInfo()
+    {
+        if (attemptCounter != null)
+        {
+            return attemptCounter.GetAttemptInfo();
+        }
+        return "尝试次数: 0";
+    }
+    
+    public int GetCurrentAttempts()
+    {
+        if (attemptCounter != null)
+        {
+            return attemptCounter.GetCurrentAttempts();
+        }
+        return 0;
+    }
+    
+    public int GetTotalAttempts()
+    {
+        if (attemptCounter != null)
+        {
+            return attemptCounter.GetTotalAttempts();
+        }
+        return 0;
+    }
 
 
 }
